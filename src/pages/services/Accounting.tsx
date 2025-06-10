@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,10 +14,10 @@ const Accounting = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  Professional <span className="text-green-600">Accounting</span> Services
+                  Achieve <span className="text-green-600">Financial Clarity</span> and Strategic Success
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Comprehensive financial management and accounting solutions to keep your business compliant, profitable, and growing.
+                  Navigating the complexities of financial management is crucial for business success. We provide comprehensive accounting solutions that streamline operations and ensure compliance.
                 </p>
               </div>
               <Button 
@@ -24,7 +25,7 @@ const Accounting = () => {
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white font-semibold tracking-tight"
               >
-                <Link to="/contact">Get Financial Clarity</Link>
+                <Link to="/contact">Get Financial Clarity with Zaytrix</Link>
               </Button>
             </div>
 
@@ -41,12 +42,12 @@ const Accounting = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Core Accounting Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Accounting Services
+              Comprehensive Accounting Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Complete financial management solutions tailored to Canadian business requirements.
@@ -54,7 +55,7 @@ const Accounting = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Financial Reporting */}
+            {/* Cloud-Based Accounting */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -63,23 +64,24 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Financial Reporting
+                      Cloud-Based Accounting
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Accurate and timely financial statements to help you understand your business performance.
+                      Simplify your financial processes with our cloud-based accounting services using QuickBooks and Xero.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Income Statements</li>
-                      <li>• Balance Sheets</li>
-                      <li>• Cash Flow Statements</li>
-                      <li>• Management Reports</li>
+                      <li>• QuickBooks Implementation & Management</li>
+                      <li>• Xero Setup & Optimization</li>
+                      <li>• Real-Time Financial Data Access</li>
+                      <li>• Streamlined Bookkeeping</li>
+                      <li>• Reduced Manual Errors</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Tax Services */}
+            {/* Tax Preparation */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -88,23 +90,25 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Tax Preparation & Planning
+                      Tax Preparation
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Comprehensive tax services to ensure compliance and optimize your tax position.
+                      Ensure full compliance and optimize your tax strategy with our expert tax preparation services.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li>• Corporate Tax Returns</li>
                       <li>• Personal Tax Returns</li>
-                      <li>• Tax Planning Strategies</li>
-                      <li>• CRA Representation</li>
+                      <li>• Tax Strategy Optimization</li>
+                      <li>• Maximize Deductions</li>
+                      <li>• Minimize Liabilities</li>
+                      <li>• Avoid Costly Penalties</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Bookkeeping */}
+            {/* Financial Management Consulting */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -113,23 +117,25 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Bookkeeping Services
+                      Financial Management Consulting
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Maintain accurate financial records with our professional bookkeeping services.
+                      Tailored consulting services to help you manage budgets, analyze performance, and develop strategic plans.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Daily Transaction Recording</li>
-                      <li>• Accounts Payable/Receivable</li>
-                      <li>• Bank Reconciliation</li>
-                      <li>• Financial Data Management</li>
+                      <li>• Budget Management</li>
+                      <li>• Financial Performance Analysis</li>
+                      <li>• Strategic Planning for Growth</li>
+                      <li>• Cash Flow Improvement</li>
+                      <li>• Investment Forecasting</li>
+                      <li>• Long-Term Sustainability</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Compliance Management */}
+            {/* Forensic Accounting */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -138,16 +144,17 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Compliance Management
+                      Forensic Accounting
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Stay compliant with Canadian regulations and reporting requirements.
+                      Uncover discrepancies and support legal proceedings with thorough financial investigations.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• GST/HST Filing</li>
-                      <li>• Payroll Services</li>
-                      <li>• Corporate Filings</li>
-                      <li>• Regulatory Compliance</li>
+                      <li>• Financial Fraud Investigation</li>
+                      <li>• Asset Mismanagement Resolution</li>
+                      <li>• Legal Proceeding Support</li>
+                      <li>• Thorough Financial Analysis</li>
+                      <li>• Discrepancy Identification</li>
                     </ul>
                   </div>
                 </div>
@@ -157,54 +164,67 @@ const Accounting = () => {
         </div>
       </section>
 
-      {/* Canadian Expertise */}
+      {/* Advanced Services */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Canadian Tax & Compliance Expertise
+              Advanced Financial Solutions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Deep understanding of Canadian tax laws, regulations, and business requirements.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-green-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                CRA Compliance
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Expertise in Canada Revenue Agency requirements and procedures.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* CFO-as-a-Service */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-green-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      CFO-as-a-Service
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Growing businesses need fractional leadership to guide them through financial challenges without a full-time CFO.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Expert Financial Leadership</li>
+                      <li>• Strategic Decision-Making</li>
+                      <li>• Financial Reporting</li>
+                      <li>• Cost-Effective Solution</li>
+                      <li>• Fractional Executive Support</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Provincial Requirements
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Understanding of provincial tax and business registration requirements.
-              </p>
-            </div>
-
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Industry Knowledge
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Specialized knowledge across various Canadian business sectors.
-              </p>
-            </div>
+            {/* Training Workshops */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Training Workshops
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Empower your team with accounting workshops that integrate software into your day-to-day operations.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Personalized Training Programs</li>
+                      <li>• Accounting Software Integration</li>
+                      <li>• Efficient Financial Management</li>
+                      <li>• Key Metrics Understanding</li>
+                      <li>• Regulatory Compliance</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -226,10 +246,10 @@ const Accounting = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-                  Business Benefits
+                  Financial Clarity, Strategic Insight, and Business Stability
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Professional accounting services that support your business growth and success.
+                  Zaytrix's accounting services bring the tools and expertise you need to thrive in a competitive environment.
                 </p>
               </div>
 
@@ -250,10 +270,10 @@ const Accounting = () => {
                   <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                      Compliance Assurance
+                      Strategic Insight
                     </h3>
                     <p className="text-gray-600 mt-1">
-                      Peace of mind knowing all regulatory requirements are met.
+                      Expert guidance for strategic decision-making and long-term growth planning.
                     </p>
                   </div>
                 </div>
@@ -262,10 +282,10 @@ const Accounting = () => {
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                      Tax Optimization
+                      Business Stability
                     </h3>
                     <p className="text-gray-600 mt-1">
-                      Strategic tax planning to minimize liabilities and maximize savings.
+                      Ensure compliance and financial stability to support sustainable growth.
                     </p>
                   </div>
                 </div>
@@ -274,10 +294,10 @@ const Accounting = () => {
                   <div className="w-6 h-6 bg-purple-600 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                      Time Savings
+                      Competitive Environment Success
                     </h3>
                     <p className="text-gray-600 mt-1">
-                      Focus on your core business while we handle the financial details.
+                      Tools and expertise to thrive in today's competitive business landscape.
                     </p>
                   </div>
                 </div>

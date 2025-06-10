@@ -14,10 +14,10 @@ const DigitalTechnology = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  <span className="text-orange-500">Digital Technology</span> That Transforms
+                  Empower Your Business with <span className="text-orange-500">Cutting-Edge Digital Solutions</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Harness the power of modern technology to digitally transform your business operations and customer experience.
+                  In today's fast-paced, ever-evolving digital landscape, businesses need robust, scalable, and innovative digital solutions to stay ahead.
                 </p>
               </div>
               <Button 
@@ -25,7 +25,7 @@ const DigitalTechnology = () => {
                 size="lg" 
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight"
               >
-                <Link to="/contact">Start Your Transformation</Link>
+                <Link to="/contact">Transform with Digital Innovation</Link>
               </Button>
             </div>
 
@@ -42,20 +42,20 @@ const DigitalTechnology = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Core Digital Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Digital Technology Services
+              Comprehensive Digital Technology Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From custom software to cloud solutions, we deliver technology that drives business success.
+              From cloud solutions to AI/ML, we deliver technology that drives business success.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Custom Software Development */}
+            {/* Cloud Solutions */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -64,23 +64,24 @@ const DigitalTechnology = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Custom Software Development
+                      Cloud Solutions
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Tailored software solutions designed specifically for your business needs and workflows.
+                      Transition to the cloud seamlessly with our migration, hosting, and optimization services.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Web Application Development</li>
-                      <li>• Mobile App Development</li>
-                      <li>• Enterprise Software Solutions</li>
-                      <li>• API Development & Integration</li>
+                      <li>• Cloud Migration Services</li>
+                      <li>• Cloud Hosting & Optimization</li>
+                      <li>• Reduced Operational Costs</li>
+                      <li>• Enhanced Data Accessibility</li>
+                      <li>• Robust Security Implementation</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Digital Transformation */}
+            {/* IoT Integration */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -89,23 +90,24 @@ const DigitalTechnology = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Digital Transformation
+                      IoT Integration
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Comprehensive digital transformation strategies to modernize your business processes and systems.
+                      Create smart business operations using IoT devices that collect data and enable predictive insights.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Process Automation</li>
-                      <li>• Legacy System Modernization</li>
-                      <li>• Digital Workflow Design</li>
-                      <li>• Change Management</li>
+                      <li>• Smart Device Integration</li>
+                      <li>• Data Collection & Analysis</li>
+                      <li>• Predictive Insights</li>
+                      <li>• Enhanced Efficiency</li>
+                      <li>• Innovation Enablement</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Cloud Solutions */}
+            {/* AI/ML Solutions */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -114,23 +116,24 @@ const DigitalTechnology = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Cloud Solutions
+                      AI/ML Solutions
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Scalable cloud infrastructure and services to reduce costs and improve accessibility.
+                      Leverage Artificial Intelligence and Machine Learning to automate processes and gain predictive insights.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Cloud Migration Services</li>
-                      <li>• Infrastructure as a Service (IaaS)</li>
-                      <li>• Software as a Service (SaaS)</li>
-                      <li>• Cloud Security & Backup</li>
+                      <li>• Process Automation</li>
+                      <li>• Predictive Analytics</li>
+                      <li>• Decision-Making Optimization</li>
+                      <li>• Custom AI/ML Tools</li>
+                      <li>• Competitive Advantage</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* IT Consulting */}
+            {/* Web Design */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -139,16 +142,17 @@ const DigitalTechnology = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      IT Consulting
+                      Web Design
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Strategic technology consulting to help you make informed decisions about your IT investments.
+                      Stand out online with beautifully designed, responsive, and SEO-optimized websites.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Technology Strategy Planning</li>
-                      <li>• System Architecture Design</li>
-                      <li>• Vendor Selection & Management</li>
-                      <li>• IT Project Management</li>
+                      <li>• Responsive Design</li>
+                      <li>• SEO Optimization</li>
+                      <li>• User-Centric Experiences</li>
+                      <li>• High ROI Focus</li>
+                      <li>• Strong Online Presence</li>
                     </ul>
                   </div>
                 </div>
@@ -158,126 +162,184 @@ const DigitalTechnology = () => {
         </div>
       </section>
 
-      {/* Technology Stack */}
+      {/* Design & Development Services */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Our Technology Expertise
+              Design & Development Excellence
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We work with cutting-edge technologies to deliver modern, scalable solutions.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Frontend Development
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                React, Vue.js, Angular, and modern web technologies.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* App Design */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      App Design
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Intuitive mobile and desktop applications that streamline operations and improve engagement.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Mobile Applications</li>
+                      <li>• Desktop Applications</li>
+                      <li>• Internal Use Systems</li>
+                      <li>• Customer-Facing Apps</li>
+                      <li>• Scalable Solutions</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Backend Development
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Node.js, Python, .NET, and robust server-side solutions.
-              </p>
-            </div>
+            {/* Logo Design & Branding */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Logo Design & Branding
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Build a memorable brand identity with professional logo design and branding packages.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Professional Logo Design</li>
+                      <li>• Brand Identity Development</li>
+                      <li>• Cohesive Visual Identity</li>
+                      <li>• Audience Resonance</li>
+                      <li>• Complete Branding Packages</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-green-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Cloud Platforms
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                AWS, Azure, Google Cloud, and hybrid cloud solutions.
-              </p>
-            </div>
+            {/* Social Media Services */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-green-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Social Media Services
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Enhance your online presence with comprehensive social media management and marketing.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Instagram, Facebook, X, TikTok</li>
+                      <li>• LinkedIn Management</li>
+                      <li>• Tailored Strategies</li>
+                      <li>• Boost Engagement</li>
+                      <li>• Customer Acquisition</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Database Systems
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                SQL Server, PostgreSQL, MongoDB, and data solutions.
-              </p>
-            </div>
+            {/* Custom Software Development */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Custom Software Development
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Tailored software solutions designed to solve your business's unique challenges.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Enterprise Systems</li>
+                      <li>• CRM Solutions</li>
+                      <li>• Workflow Automation</li>
+                      <li>• Performance Optimization</li>
+                      <li>• Competitive Edge</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* E-Learning Platform */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Our Development Process
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto font-bold">
-                1
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Discovery
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Understanding your business needs and technical requirements.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" 
+                alt="E-learning and training" 
+                className="rounded-lg shadow-xl w-full h-[400px] object-cover"
+              />
             </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto font-bold">
-                2
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+                  E-Learning Platforms
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Empower your workforce with tailored online education systems.
+                </p>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Design
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Creating user-centered designs and system architecture plans.
-              </p>
-            </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto font-bold">
-                3
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Development
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Agile development with regular updates and feedback cycles.
-              </p>
-            </div>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-orange-500 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                      Engaging Training Solutions
+                    </h3>
+                    <p className="text-gray-600 mt-1">
+                      Interactive and effective training solutions that improve employee skills.
+                    </p>
+                  </div>
+                </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto font-bold">
-                4
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                      Knowledge Sharing
+                    </h3>
+                    <p className="text-gray-600 mt-1">
+                      Enhanced knowledge sharing capabilities across your organization.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                      Productivity Boost
+                    </h3>
+                    <p className="text-gray-600 mt-1">
+                      Boost productivity through comprehensive online education systems.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Deployment
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Seamless deployment with ongoing support and maintenance.
-              </p>
             </div>
           </div>
         </div>

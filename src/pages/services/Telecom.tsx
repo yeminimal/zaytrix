@@ -14,10 +14,10 @@ const Telecom = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  Advanced <span className="text-blue-600">Telecommunications</span> Solutions
+                  Building the <span className="text-blue-600">Networks</span> of Tomorrow, <span className="text-orange-500">Today</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Connect your business with robust, scalable telecommunications infrastructure designed for the modern enterprise.
+                  Advanced telecommunications infrastructure and optimization services designed for the modern enterprise and next-generation connectivity.
                 </p>
               </div>
               <Button 
@@ -42,20 +42,20 @@ const Telecom = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Core Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Telecommunications Services
+              Comprehensive Telecommunications Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive telecommunications solutions to keep your business connected and competitive.
+              From RF planning to fiber optics, we deliver complete telecommunications solutions.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Network Infrastructure */}
+            {/* RF Planning and Optimization */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -64,23 +64,23 @@ const Telecom = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Network Infrastructure Design
+                      RF Planning and Optimization
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Custom network architecture planning and implementation for optimal performance and scalability.
+                      Strategic radio frequency planning and optimization for 5G deployments and network health.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• LAN/WAN Design & Implementation</li>
-                      <li>• Network Performance Optimization</li>
-                      <li>• Scalable Infrastructure Planning</li>
-                      <li>• Network Monitoring & Management</li>
+                      <li>• 5G Deployment and Coverage Planning</li>
+                      <li>• Capacity Planning and Traffic Analysis</li>
+                      <li>• Network Health Optimization</li>
+                      <li>• Performance Benchmarking</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Unified Communications */}
+            {/* Drive Test */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -89,23 +89,23 @@ const Telecom = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Unified Communications
+                      Drive Test
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Integrated communication platforms that bring together voice, video, messaging, and collaboration tools.
+                      Comprehensive field testing using advanced UE devices, CPE equipment, and scanners.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Voice & Video Conferencing</li>
-                      <li>• Instant Messaging Integration</li>
-                      <li>• Mobile Communications</li>
-                      <li>• Collaboration Platforms</li>
+                      <li>• UE Devices and CPE Testing</li>
+                      <li>• Advanced Scanner Technology</li>
+                      <li>• Coverage Assessment and Validation</li>
+                      <li>• Real-World Performance Analysis</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* VoIP Solutions */}
+            {/* Logfile Collection & Processing */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -114,23 +114,23 @@ const Telecom = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      VoIP Solutions
+                      Logfile Collection & Processing
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Modern voice over IP systems that reduce costs while improving communication flexibility and features.
+                      Advanced analysis of network data to identify bottlenecks and generate actionable insights.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Cloud-Based Phone Systems</li>
-                      <li>• Cost Reduction Strategies</li>
-                      <li>• Advanced Call Features</li>
-                      <li>• Remote Work Integration</li>
+                      <li>• Network Bottleneck Identification</li>
+                      <li>• Performance Data Analysis</li>
+                      <li>• Actionable Reporting</li>
+                      <li>• Optimization Recommendations</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Network Security */}
+            {/* Site Maintenance */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -139,16 +139,16 @@ const Telecom = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Network Security
+                      Site Maintenance
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Comprehensive security solutions to protect your telecommunications infrastructure from threats.
+                      Proactive maintenance services to ensure optimal network performance and reliability.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Firewall Configuration</li>
-                      <li>• Intrusion Detection Systems</li>
-                      <li>• VPN Solutions</li>
-                      <li>• Security Monitoring</li>
+                      <li>• Routine Inspections and Maintenance</li>
+                      <li>• Preventive Maintenance Programs</li>
+                      <li>• Emergency Response Support</li>
+                      <li>• Equipment Health Monitoring</li>
                     </ul>
                   </div>
                 </div>
@@ -158,51 +158,118 @@ const Telecom = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Advanced Solutions */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Why Choose Zaytrix Telecommunications?
+              Advanced Network Solutions
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Proven Expertise
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Years of experience in designing and implementing telecommunications solutions for Canadian businesses.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* IoT Solutions */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      IoT Solutions
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Smart connectivity solutions for cities, enterprises, and residential applications.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Smart Cities Infrastructure</li>
+                      <li>• Connected Enterprise Solutions</li>
+                      <li>• Smart Homes and Offices</li>
+                      <li>• Industrial IoT Applications</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                Scalable Solutions
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Infrastructure that grows with your business, from startup to enterprise level requirements.
-              </p>
-            </div>
+            {/* Fiber Optics Services */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Fiber Optics Services
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      High-speed connectivity with expert fiber optic installation, testing, and maintenance.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Fiber Optic Splicing</li>
+                      <li>• Testing & Certification</li>
+                      <li>• Network Infrastructure Development</li>
+                      <li>• Troubleshooting & Diagnostics</li>
+                      <li>• Last-Mile Fiber Solutions</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-green-600 rounded-full"></div>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
-                24/7 Support
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Round-the-clock monitoring and support to ensure your communications stay operational.
-              </p>
-            </div>
+            {/* Private Network Deployment */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-green-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Private Network Deployment
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Secure, reliable, and scalable private LTE & 5G networks for enterprise applications.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Tailored Network Design</li>
+                      <li>• High-Performance & Low-Latency</li>
+                      <li>• Secure Communications</li>
+                      <li>• Seamless Integration</li>
+                      <li>• Scalable & Future-Proof</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Telecom Project Management */}
+            <Card className="border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                      Telecom Project Management
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Efficient project management for seamless network rollouts and infrastructure upgrades.
+                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Full-Cycle Project Management</li>
+                      <li>• Cross-Functional Coordination</li>
+                      <li>• Risk Management & Mitigation</li>
+                      <li>• Quality Assurance & Compliance</li>
+                      <li>• Cost Control & Budgeting</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

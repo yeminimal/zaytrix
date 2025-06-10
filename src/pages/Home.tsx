@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Quote } from "lucide-react";
 
 const Home = () => {
   return (
@@ -15,10 +14,10 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  Trusted Canadian <span className="text-blue-600">Technology</span> & <span className="text-orange-500">Business Solutions</span>
+                  Innovating Tomorrow, <span className="text-blue-600">Today</span> – Solutions That Transform <span className="text-orange-500">Lives and Businesses</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Zaytrix delivers comprehensive services in Telecommunications, Digital Technology, and Accounting. We help Canadian businesses thrive with innovative solutions and trusted expertise.
+                  Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across the Greater Toronto Area. We help Canadian businesses thrive with innovative solutions and trusted expertise.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -27,7 +26,7 @@ const Home = () => {
                   size="lg" 
                   className="bg-blue-600 hover:bg-blue-700 text-white font-semibold tracking-tight"
                 >
-                  <Link to="/services">Explore Services</Link>
+                  <Link to="/services">Discover Our Services</Link>
                 </Button>
                 <Button 
                   asChild 
@@ -35,7 +34,7 @@ const Home = () => {
                   size="lg" 
                   className="border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold tracking-tight"
                 >
-                  <Link to="/contact">Get in Touch</Link>
+                  <Link to="/contact">Let's Build Something Extraordinary</Link>
                 </Button>
               </div>
             </div>
@@ -217,6 +216,70 @@ const Home = () => {
                 <Link to="/about">Learn About Us</Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clients Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+              Partnering with Leading Organizations to Drive Telecom and Technology Excellence
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              At Zaytrix Management and Technology Group, we pride ourselves on building strong, long-lasting relationships with our clients. We work alongside businesses in a variety of industries, providing customized telecom solutions and technology services that meet their unique challenges and goals.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <Quote className="w-8 h-8 text-blue-600" />
+                  <blockquote className="text-gray-700 leading-relaxed">
+                    "We partnered with Zaytrix for the deployment of our 5G network, and their expertise in RF planning, optimization, and project management was exceptional. Their approach to Drive Testing and Logfile Processing helped us identify critical performance issues and optimize our network for better user experience."
+                  </blockquote>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-gray-900 tracking-tight">Abdul Toyosi</div>
+                    <div className="text-sm text-gray-600">Telecom Industry Leader</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <Quote className="w-8 h-8 text-orange-500" />
+                  <blockquote className="text-gray-700 leading-relaxed">
+                    "Zaytrix's IoT Solutions transformed our operations, enabling us to integrate smart technologies seamlessly into our business. Their team's knowledge and commitment to delivering practical solutions have made them an invaluable partner."
+                  </blockquote>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-gray-900 tracking-tight">John Wood</div>
+                    <div className="text-sm text-gray-600">Smart City Developer</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <Quote className="w-8 h-8 text-green-600" />
+                  <blockquote className="text-gray-700 leading-relaxed">
+                    "Zaytrix's Fiber Optic Services and ongoing Site Maintenance have significantly improved our network's reliability. Their proactive approach to infrastructure management has reduced downtime and enhanced our service quality."
+                  </blockquote>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-gray-900 tracking-tight">Greg Howthin</div>
+                    <div className="text-sm text-gray-600">Enterprise Network Provider</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

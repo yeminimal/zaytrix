@@ -193,11 +193,18 @@ const Contact = () => {
                           <h3 className="font-semibold text-gray-900">
                             Phone
                           </h3>
-                          <p className="text-gray-600">
-                            <a href="tel:+14167793502" className="hover:text-primary transition-colors">
-                              +1 (416) 779-3502
-                            </a>
-                          </p>
+                          <div className="text-gray-600 space-y-1">
+                            <p>
+                              <a href="tel:+14167793502" className="hover:text-primary transition-colors">
+                                +1 (416) 779-3502
+                              </a>
+                            </p>
+                            <p>
+                              <a href="tel:+14167793502" className="hover:text-primary transition-colors">
+                                +1 (416) 779-3502
+                              </a>
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </CardContent>

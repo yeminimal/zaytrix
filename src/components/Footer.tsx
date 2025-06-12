@@ -23,6 +23,11 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-gray-300 text-sm">
+                <a href="tel:+14167793502" className="hover:text-white transition-colors">
+                  +1 (416) 779-3502
+                </a>
+              </p>
+              <p className="text-gray-300 text-sm">
                 <a href="mailto:info@zaytrix.com" className="hover:text-white transition-colors">
                   info@zaytrix.com
                 </a>

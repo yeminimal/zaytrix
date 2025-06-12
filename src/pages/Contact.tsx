@@ -301,19 +301,19 @@ const Contact = () => {
               <ServiceCard
                 title="Telecommunications"
                 description="Advanced telecommunications infrastructure and solutions."
-                icon={<Radio className="w-12 h-12 text-primary" />}
+                icon={<Radio className="w-6 h-6 text-primary" />}
               />
 
               <ServiceCard
                 title="Digital Technology"
                 description="Cutting-edge digital solutions and technology services."
-                icon={<Monitor className="w-12 h-12 text-primary" />}
+                icon={<Monitor className="w-6 h-6 text-primary" />}
               />
 
               <ServiceCard
                 title="Management"
                 description="Professional management services and financial solutions."
-                icon={<Calculator className="w-12 h-12 text-primary" />}
+                icon={<Calculator className="w-6 h-6 text-primary" />}
               />
             </div>
           </div>

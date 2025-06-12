@@ -44,19 +44,19 @@ const About = () => {
               <ServiceCard
                 title="Mission"
                 description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and accounting services."
-                icon={<Target className="w-12 h-12 text-primary" />}
+                icon={<Target className="w-6 h-6 text-primary" />}
               />
 
               <ServiceCard
                 title="Vision"
                 description="To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients."
-                icon={<Eye className="w-12 h-12 text-primary" />}
+                icon={<Eye className="w-6 h-6 text-primary" />}
               />
 
               <ServiceCard
                 title="Values"
                 description="Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery."
-                icon={<Heart className="w-12 h-12 text-primary" />}
+                icon={<Heart className="w-6 h-6 text-primary" />}
               />
             </div>
           </div>

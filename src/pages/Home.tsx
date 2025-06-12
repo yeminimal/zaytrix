@@ -27,7 +27,7 @@ const Home = () => {
         <HeroSection
           title="Innovating Tomorrow,"
           subtitle="Today"
-          description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. We help Canadian businesses thri[...]"
+          description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. We help Canadian businesses thrive with innovative solutions and trusted expertise."
           primaryCTA={{
             text: "Discover Our Services",
             href: "/services"

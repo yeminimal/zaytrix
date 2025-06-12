@@ -1,10 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
+import { Target, Eye, Heart } from "lucide-react";
 
 const About = () => {
   return (
@@ -44,19 +44,19 @@ const About = () => {
               <ServiceCard
                 title="Mission"
                 description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and accounting services."
-                icon={<div className="w-8 h-8 bg-primary rounded-full"></div>}
+                icon={<Target className="w-12 h-12 text-primary" />}
               />
 
               <ServiceCard
                 title="Vision"
                 description="To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients."
-                icon={<div className="w-8 h-8 bg-primary rounded-full"></div>}
+                icon={<Eye className="w-12 h-12 text-primary" />}
               />
 
               <ServiceCard
                 title="Values"
                 description="Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery."
-                icon={<div className="w-8 h-8 bg-primary rounded-full"></div>}
+                icon={<Heart className="w-12 h-12 text-primary" />}
               />
             </div>
           </div>
@@ -73,6 +73,9 @@ const About = () => {
                   alt="Modern technology workspace representing our innovative approach" 
                   className="rounded-lg shadow-xl w-full h-[400px] object-cover"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="400"
                 />
               </div>
 

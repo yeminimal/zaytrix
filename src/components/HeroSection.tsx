@@ -67,6 +67,9 @@ const HeroSection = ({
               alt={image.alt}
               className="rounded-lg shadow-xl w-full h-[400px] object-cover"
               loading="lazy"
+              decoding="async"
+              width="800"
+              height="400"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/10 rounded-lg"></div>
           </div>

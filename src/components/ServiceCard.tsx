@@ -16,7 +16,7 @@ const ServiceCard = ({ title, description, features, icon, className = "" }: Ser
       <CardContent className="p-8">
         <div className="space-y-6">
           {icon && (
-            <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
               {icon}
             </div>
           )}

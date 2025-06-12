@@ -9,7 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Radio, Monitor, Calculator } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -166,7 +166,7 @@ const Contact = () => {
                   <Card className="border-gray-200">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
-                        <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                           <Mail className="w-6 h-6 text-primary" />
                         </div>
                         <div className="space-y-1">
@@ -186,7 +186,7 @@ const Contact = () => {
                   <Card className="border-gray-200">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
-                        <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                           <Phone className="w-6 h-6 text-primary" />
                         </div>
                         <div className="space-y-1">
@@ -213,7 +213,7 @@ const Contact = () => {
                   <Card className="border-gray-200">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
-                        <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                           <MapPin className="w-6 h-6 text-primary" />
                         </div>
                         <div className="space-y-1">
@@ -272,7 +272,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="flex items-start space-x-4 justify-center">
-                      <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <MapPin className="w-6 h-6 text-primary" />
                       </div>
                       <div className="text-center">
@@ -306,19 +306,19 @@ const Contact = () => {
               <ServiceCard
                 title="Telecommunications"
                 description="Advanced telecommunications infrastructure and solutions."
-                icon={<div className="w-6 h-6 bg-primary rounded"></div>}
+                icon={<Radio className="w-12 h-12 text-primary" />}
               />
 
               <ServiceCard
                 title="Digital Technology"
                 description="Cutting-edge digital solutions and technology services."
-                icon={<div className="w-6 h-6 bg-primary rounded"></div>}
+                icon={<Monitor className="w-12 h-12 text-primary" />}
               />
 
               <ServiceCard
                 title="Management"
                 description="Professional management services and financial solutions."
-                icon={<div className="w-6 h-6 bg-primary rounded"></div>}
+                icon={<Calculator className="w-12 h-12 text-primary" />}
               />
             </div>
           </div>

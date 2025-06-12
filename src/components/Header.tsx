@@ -80,7 +80,7 @@ const Header = () => {
                     to="/services/accounting" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                   >
-                    Accounting
+                    Management
                   </Link>
                 </div>
               )}

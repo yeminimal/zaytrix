@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -144,13 +143,13 @@ const Services = () => {
               </CardContent>
             </Card>
 
-            {/* Accounting */}
+            {/* Management */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                    alt="Professional accounting services" 
+                    alt="Professional management services" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-green-600/20"></div>
@@ -158,10 +157,10 @@ const Services = () => {
                 <div className="p-8 space-y-6">
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
-                      Accounting
+                      Management
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Professional accounting services, financial management, and compliance solutions to ensure your business stays financially healthy and compliant.
+                      Professional management services, financial solutions, and compliance management to ensure your business stays financially healthy and compliant.
                     </p>
                   </div>
                   
@@ -180,7 +179,7 @@ const Services = () => {
                     className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold tracking-tight group"
                   >
                     <Link to="/services/accounting" className="flex items-center justify-center">
-                      Explore Accounting
+                      Explore Management
                       <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>

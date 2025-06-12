@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,7 +16,7 @@ const Accounting = () => {
                   Achieve <span className="text-green-600">Financial Clarity</span> and Strategic Success
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Navigating the complexities of financial management is crucial for business success. We provide comprehensive accounting solutions that streamline operations and ensure compliance.
+                  Navigating the complexities of financial management is crucial for business success. We provide comprehensive management solutions that streamline operations and ensure compliance.
                 </p>
               </div>
               <Button 
@@ -33,7 +32,7 @@ const Accounting = () => {
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                alt="Professional accounting workspace" 
+                alt="Professional management workspace" 
                 className="rounded-lg shadow-xl w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-green-600/20 to-blue-600/20 rounded-lg"></div>
@@ -42,12 +41,12 @@ const Accounting = () => {
         </div>
       </section>
 
-      {/* Core Accounting Services */}
+      {/* Core Management Services */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
-              Comprehensive Accounting Services
+              Comprehensive Management Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Complete financial management solutions tailored to Canadian business requirements.
@@ -55,7 +54,7 @@ const Accounting = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Cloud-Based Accounting */}
+            {/* Cloud-Based Financial Management */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -64,10 +63,10 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Cloud-Based Accounting
+                      Cloud-Based Financial Management
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Simplify your financial processes with our cloud-based accounting services using QuickBooks and Xero.
+                      Simplify your financial processes with our cloud-based management services using QuickBooks and Xero.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li>• QuickBooks Implementation & Management</li>
@@ -135,7 +134,7 @@ const Accounting = () => {
               </CardContent>
             </Card>
 
-            {/* Forensic Accounting */}
+            {/* Forensic Financial Analysis */}
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -144,7 +143,7 @@ const Accounting = () => {
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                      Forensic Accounting
+                      Forensic Financial Analysis
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
                       Uncover discrepancies and support legal proceedings with thorough financial investigations.
@@ -212,11 +211,11 @@ const Accounting = () => {
                       Training Workshops
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Empower your team with accounting workshops that integrate software into your day-to-day operations.
+                      Empower your team with financial management workshops that integrate software into your day-to-day operations.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li>• Personalized Training Programs</li>
-                      <li>• Accounting Software Integration</li>
+                      <li>• Financial Software Integration</li>
                       <li>• Efficient Financial Management</li>
                       <li>• Key Metrics Understanding</li>
                       <li>• Regulatory Compliance</li>
@@ -249,7 +248,7 @@ const Accounting = () => {
                   Financial Clarity, Strategic Insight, and Business Stability
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Zaytrix's accounting services bring the tools and expertise you need to thrive in a competitive environment.
+                  Zaytrix's management services bring the tools and expertise you need to thrive in a competitive environment.
                 </p>
               </div>
 
@@ -316,7 +315,7 @@ const Accounting = () => {
                 Get Your Finances on Track
               </h2>
               <p className="text-xl text-green-100 max-w-3xl mx-auto leading-relaxed">
-                Let our accounting professionals help you achieve financial clarity and compliance.
+                Let our management professionals help you achieve financial clarity and compliance.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -49,8 +49,8 @@ const Contact = () => {
     <>
       <PageHead 
         title="Contact Us"
-        description="Get in touch with Zaytrix Management and Technology Group. Contact us for telecommunications, digital technology, and accounting services across Canada."
-        keywords="contact Zaytrix, Canadian technology services, telecommunications consultation, digital transformation, accounting services"
+        description="Get in touch with Zaytrix Management and Technology Group. Contact us for telecommunications, digital technology, and management services across Canada."
+        keywords="contact Zaytrix, Canadian technology services, telecommunications consultation, digital transformation, management services"
         canonicalUrl="https://zaytrix.com/contact"
       />
       
@@ -158,7 +158,7 @@ const Contact = () => {
                     Contact Information
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    We're here to help with all your telecommunications, digital technology, and accounting needs.
+                    We're here to help with all your telecommunications, digital technology, and management needs.
                   </p>
                 </div>
 
@@ -194,8 +194,8 @@ const Contact = () => {
                             Phone
                           </h3>
                           <p className="text-gray-600">
-                            <a href="tel:+14169999000" className="hover:text-primary transition-colors">
-                              +1 (416) 999-9000
+                            <a href="tel:+14167793502" className="hover:text-primary transition-colors">
+                              +1 (416) 779-3502
                             </a>
                           </p>
                         </div>
@@ -243,6 +243,43 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
+            {/* Nigerian Subsidiary Information */}
+            <div className="mt-16 pt-12 border-t border-gray-200">
+              <div className="text-center space-y-4 mb-8">
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Subsidiary Information
+                </h2>
+              </div>
+              
+              <Card className="border-gray-200 max-w-2xl mx-auto">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <div className="text-center space-y-2">
+                      <h3 className="text-xl font-semibold text-gray-900">
+                        Nigeria Office
+                      </h3>
+                      <p className="text-lg font-medium text-primary">
+                        Surge Network Nigeria Limited
+                      </p>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4 justify-center">
+                      <div className="icon-standard bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="text-center">
+                        <p className="text-gray-600 leading-relaxed">
+                          Plot 12 Muyi Adekola Avenue<br />
+                          Adegbose Phase 2 Estate<br />
+                          Ikorodu, Lagos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </main>
 
@@ -272,8 +309,8 @@ const Contact = () => {
               />
 
               <ServiceCard
-                title="Accounting"
-                description="Professional accounting services and financial management."
+                title="Management"
+                description="Professional management services and financial solutions."
                 icon={<div className="w-6 h-6 bg-primary rounded"></div>}
               />
             </div>

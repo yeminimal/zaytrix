@@ -14,8 +14,20 @@ const Footer = () => {
               className="h-8 w-auto mb-4"
             />
             <p className="text-gray-300 text-sm leading-relaxed max-w-md">
-              Zaytrix is a multidisciplinary Canadian company offering comprehensive services in Telecommunications, Digital Technology, and Accounting. We build trust through innovation and excellence.
+              Zaytrix is a multidisciplinary Canadian company offering comprehensive services in Telecommunications, Digital Technology, and Management. We build trust through innovation and excellence.
             </p>
+            <div className="mt-4 space-y-2">
+              <p className="text-gray-300 text-sm">
+                <a href="tel:+14167793502" className="hover:text-white transition-colors">
+                  +1 (416) 779-3502
+                </a>
+              </p>
+              <p className="text-gray-300 text-sm">
+                <a href="mailto:info@zaytrix.com" className="hover:text-white transition-colors">
+                  info@zaytrix.com
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* Services */}
@@ -34,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/services/accounting" className="text-gray-300 hover:text-white text-sm transition-colors">
-                  Accounting
+                  Management
                 </Link>
               </li>
             </ul>

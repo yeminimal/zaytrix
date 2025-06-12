@@ -60,19 +60,19 @@ const Home = () => {
                 <ServiceCard
                   title="Telecommunications"
                   description="Advanced telecommunications infrastructure and solutions to keep your business connected and competitive."
-                  icon={<Radio className="w-12 h-12 bg-primary rounded" />}
+                  icon={<Radio className="w-12 h-12 text-primary rounded" />}
                 />
 
                 <ServiceCard
                   title="Digital Technology"
                   description="Cutting-edge digital solutions and technology services to transform your business operations and customer experience."
-                  icon={<Monitor className="w-12 h-12 bg-primary rounded" />}
+                  icon={<Monitor className="w-12 h-12 text-primary rounded" />}
                 />
 
                 <ServiceCard
                   title="Management"
                   description="Professional accounting services and financial management solutions to ensure compliance and growth."
-                  icon={<Calculator className="w-12 h-12 bg-primary rounded" />}
+                  icon={<Calculator className="w-12 h-12 text-primary rounded" />}
                 />
               </div>
             </div>

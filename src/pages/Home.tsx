@@ -6,6 +6,7 @@ import { ChevronRight, Quote } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
+import { Mail, Phone, MapPin, Radio, Monitor, Calculator } from "lucide-react";
 
 const Home = () => {
   return (
@@ -60,19 +61,19 @@ const Home = () => {
                 <ServiceCard
                   title="Telecommunications"
                   description="Advanced telecommunications infrastructure and solutions to keep your business connected and competitive."
-                  icon={<div className="icon-accent bg-primary rounded"></div>}
+                  icon={<Radio className="w-12 h-12 bg-primary rounded"></div/>}
                 />
 
                 <ServiceCard
                   title="Digital Technology"
                   description="Cutting-edge digital solutions and technology services to transform your business operations and customer experience."
-                  icon={<div className="icon-accent bg-primary rounded"></div>}
+                  icon={<Monitor className="w-12 h-12 bg-primary rounded"></div/>}
                 />
 
                 <ServiceCard
                   title="Management"
                   description="Professional accounting services and financial management solutions to ensure compliance and growth."
-                  icon={<div className="icon-accent bg-primary rounded"></div>}
+                  icon={<Calculator className="w-12 h-12 bg-primary rounded"></div/>}
                 />
               </div>
             </div>

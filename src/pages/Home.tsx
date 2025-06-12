@@ -70,7 +70,7 @@ const Home = () => {
                 />
 
                 <ServiceCard
-                  title="Accounting"
+                  title="Management"
                   description="Professional accounting services and financial management solutions to ensure compliance and growth."
                   icon={<div className="icon-accent bg-primary rounded"></div>}
                 />

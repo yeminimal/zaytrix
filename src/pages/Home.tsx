@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,7 +12,7 @@ const Home = () => {
     <>
       <PageHead 
         title="Home"
-        description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. Innovative solutions that transform businesses."
+        description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. Innovative solutions that transfor[...]"
         keywords="telecommunications, digital technology, accounting, Canadian business solutions, Zaytrix"
         canonicalUrl="https://zaytrix.com"
       />
@@ -28,7 +27,7 @@ const Home = () => {
         <HeroSection
           title="Innovating Tomorrow,"
           subtitle="Today"
-          description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. We help Canadian businesses thrive with innovative solutions and trusted expertise."
+          description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Accounting across Canada. We help Canadian businesses thri[...]"
           primaryCTA={{
             text: "Discover Our Services",
             href: "/services"
@@ -61,19 +60,19 @@ const Home = () => {
                 <ServiceCard
                   title="Telecommunications"
                   description="Advanced telecommunications infrastructure and solutions to keep your business connected and competitive."
-                  icon={<Radio className="w-12 h-12 bg-primary rounded"></div/>}
+                  icon={<Radio className="w-12 h-12 bg-primary rounded" />}
                 />
 
                 <ServiceCard
                   title="Digital Technology"
                   description="Cutting-edge digital solutions and technology services to transform your business operations and customer experience."
-                  icon={<Monitor className="w-12 h-12 bg-primary rounded"></div/>}
+                  icon={<Monitor className="w-12 h-12 bg-primary rounded" />}
                 />
 
                 <ServiceCard
                   title="Management"
                   description="Professional accounting services and financial management solutions to ensure compliance and growth."
-                  icon={<Calculator className="w-12 h-12 bg-primary rounded"></div/>}
+                  icon={<Calculator className="w-12 h-12 bg-primary rounded" />}
                 />
               </div>
             </div>

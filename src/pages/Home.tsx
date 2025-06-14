@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <PageHead 
         title="Home"
-        description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Management across Canada. Innovative solutions that transform businesses."
+        description="Zaytrix Management and Technology Group delivers comprehensive Telecommunications, Digital Technology, and Management services across Canada. Innovative solutions that transform businesses."
         keywords="telecommunications, digital technology, accounting, Canadian business solutions, Zaytrix"
         canonicalUrl="https://zaytrix.com"
       />
@@ -28,7 +28,7 @@ const Home = () => {
         <HeroSection
           title="Innovating Tomorrow,"
           subtitle="Today"
-          description="Zaytrix Management and Technology Group delivers comprehensive services in Telecommunications, Digital Technology, and Management across Canada. We help Canadian businesses thrive with innovative solutions and trusted expertise."
+          description="Zaytrix Management and Technology Group delivers comprehensive Telecommunications, Digital Technology, and Management services across Canada. We help Canadian businesses thrive with innovative solutions and trusted expertise."
           primaryCTA={{
             text: "Discover Our Services",
             href: "/services"

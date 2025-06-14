@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Handshake, Chip, Flag, Shield } from "lucide-react";
+import { ChevronRight, Handshake, Zap, Flag, Shield } from "lucide-react";
 
 const Services = () => {
   return (
@@ -230,7 +229,7 @@ const Services = () => {
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <Chip className="w-8 h-8 text-orange-500" aria-label="Seamless integration icon" />
+                <Zap className="w-8 h-8 text-orange-500" aria-label="Seamless integration icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Seamless Integration

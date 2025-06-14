@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { FilePieChart, ReceiptText, Calculator, Shield } from "lucide-react";
+import { FilePieChart, ReceiptText, Calculator, Shield, Cloud, ListChecks, DollarSign, Gavel, Briefcase, UserCog, BookCheck } from "lucide-react";
 
 const Accounting = () => {
   return (
@@ -119,9 +119,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <Cloud size={48} className="text-green-600 mb-4" aria-label="Cloud-Based Financial Management icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Cloud-Based Financial Management
@@ -145,9 +143,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <ListChecks size={48} className="text-blue-600 mb-4" aria-label="Tax Preparation icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Tax Preparation
@@ -172,9 +168,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                  </div>
+                  <DollarSign size={48} className="text-orange-500 mb-4" aria-label="Financial Management Consulting icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Financial Management Consulting
@@ -199,9 +193,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
-                  </div>
+                  <Gavel size={48} className="text-purple-600 mb-4" aria-label="Forensic Financial Analysis icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Forensic Financial Analysis
@@ -238,9 +230,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <Briefcase size={48} className="text-green-600 mb-4" aria-label="CFO-as-a-Service icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       CFO-as-a-Service
@@ -264,9 +254,7 @@ const Accounting = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <UserCog size={48} className="text-blue-600 mb-4" aria-label="Training Workshops icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Training Workshops
@@ -315,7 +303,7 @@ const Accounting = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <BookCheck size={32} className="text-green-600 flex-shrink-0 mt-1" aria-label="Financial Clarity icon" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                       Financial Clarity
@@ -327,7 +315,7 @@ const Accounting = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <FilePieChart size={32} className="text-blue-600 flex-shrink-0 mt-1" aria-label="Strategic Insight icon" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                       Strategic Insight
@@ -339,7 +327,7 @@ const Accounting = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-orange-500 rounded-full flex-shrink-0 mt-1"></div>
+                  <Shield size={32} className="text-orange-500 flex-shrink-0 mt-1" aria-label="Business Stability icon" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                       Business Stability
@@ -351,7 +339,7 @@ const Accounting = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-purple-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <Shield size={32} className="text-purple-600 flex-shrink-0 mt-1" aria-label="Competitive Environment Success icon" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                       Competitive Environment Success

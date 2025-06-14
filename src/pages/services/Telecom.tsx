@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Wifi, Network, Headphones, ShieldCheck } from "lucide-react";
+import { Wifi, Network, Headphones, ShieldCheck, Signal, Car, FileBarChart2, Wrench, DatabaseZap, Spline, Server, Lock, Workflow } from "lucide-react";
 
 const Telecom = () => {
   return (
@@ -119,9 +119,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <Signal size={48} className="text-blue-600 mb-4" aria-label="RF Planning and Optimization icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       RF Planning and Optimization
@@ -144,9 +142,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                  </div>
+                  <Car size={48} className="text-orange-500 mb-4" aria-label="Drive Test icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Drive Test
@@ -169,9 +165,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <FileBarChart2 size={48} className="text-green-600 mb-4" aria-label="Logfile Collection and Processing icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Logfile Collection & Processing
@@ -194,9 +188,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
-                  </div>
+                  <Wrench size={48} className="text-purple-600 mb-4" aria-label="Site Maintenance icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Site Maintenance
@@ -232,9 +224,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <DatabaseZap size={48} className="text-blue-600 mb-4" aria-label="IoT Solutions icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       IoT Solutions
@@ -257,9 +247,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                  </div>
+                  <Spline size={48} className="text-orange-500 mb-4" aria-label="Fiber Optics Services icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Fiber Optics Services
@@ -283,9 +271,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <Server size={48} className="text-green-600 mb-4" aria-label="Private Network Deployment icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Private Network Deployment
@@ -309,9 +295,7 @@ const Telecom = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
-                  </div>
+                  <Workflow size={48} className="text-purple-600 mb-4" aria-label="Telecom Project Management icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Telecom Project Management

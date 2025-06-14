@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, RefreshCcw, Cloud, GanttChartSquare } from "lucide-react";
+import { Code2, RefreshCcw, Cloud, GanttChartSquare, DatabaseZap, HardDrive, Brain, Palette, Smartphone, FileStack, Users, SquaresFour } from "lucide-react";
 
 const DigitalTechnology = () => {
   return (
@@ -119,9 +119,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                  </div>
+                  <Cloud size={48} className="text-orange-500 mb-4" aria-label="Cloud Solutions icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Cloud Solutions
@@ -145,9 +143,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <DatabaseZap size={48} className="text-blue-600 mb-4" aria-label="IoT Integration icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       IoT Integration
@@ -171,9 +167,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <Brain size={48} className="text-green-600 mb-4" aria-label="AI/ML Solutions icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       AI/ML Solutions
@@ -197,9 +191,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
-                  </div>
+                  <Palette size={48} className="text-purple-600 mb-4" aria-label="Web Design icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Web Design
@@ -236,9 +228,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                  </div>
+                  <Smartphone size={48} className="text-orange-500 mb-4" aria-label="App Design icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       App Design
@@ -262,9 +252,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-blue-600 rounded"></div>
-                  </div>
+                  <FileStack size={48} className="text-blue-600 mb-4" aria-label="Logo Design & Branding icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Logo Design & Branding
@@ -288,9 +276,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-green-600 rounded"></div>
-                  </div>
+                  <Users size={48} className="text-green-600 mb-4" aria-label="Social Media Services icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Social Media Services
@@ -314,9 +300,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-600 rounded"></div>
-                  </div>
+                  <SquaresFour size={48} className="text-purple-600 mb-4" aria-label="Custom Software Development icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Custom Software Development

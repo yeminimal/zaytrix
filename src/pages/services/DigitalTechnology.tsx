@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, RefreshCcw, Cloud, GanttChartSquare, DatabaseZap, HardDrive, Brain, Palette, Smartphone, FileStack, Users, SquaresFour } from "lucide-react";
+import { 
+  Code2, 
+  RefreshCcw, 
+  Cloud, 
+  GanttChartSquare, 
+  DatabaseZap, 
+  HardDrive, 
+  Brain, 
+  Palette, 
+  Smartphone, 
+  FileStack, 
+  Users, 
+  SquareStack 
+} from "lucide-react";
 
 const DigitalTechnology = () => {
   return (
@@ -300,7 +313,7 @@ const DigitalTechnology = () => {
             <Card className="border-gray-200">
               <CardContent className="p-8">
                 <div className="space-y-6">
-                  <SquaresFour size={48} className="text-purple-600 mb-4" aria-label="Custom Software Development icon" />
+                  <SquareStack size={48} className="text-purple-600 mb-4" aria-label="Custom Software Development icon" />
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                       Custom Software Development

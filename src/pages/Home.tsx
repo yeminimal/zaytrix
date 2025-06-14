@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -28,7 +27,7 @@ const Home = () => {
         <HeroSection
           title="Innovating Tomorrow,"
           subtitle="Today"
-          description="Zaytrix Management and Technology Group delivers expert Telecommunications, Digital Technology, and Management services across Canada. We help Canadian businesses thrive with innovative solutions and trusted expertise."
+          description="Zaytrix Management and Technology Group delivers expert Telecommunications, Digital Technology, and Management services across Canada. We help Canadian businesses thrive with innovation and expertise."
           primaryCTA={{
             text: "Discover Our Services",
             href: "/services"
@@ -52,7 +51,7 @@ const Home = () => {
                 <h2 className="text-gray-900">
                   Our Core Services
                 </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed justified-description">
                   We provide end-to-end solutions across three key areas to support your business growth and operational excellence.
                 </p>
               </div>
@@ -99,7 +98,7 @@ const Home = () => {
                     <h2 className="text-gray-900">
                       Why Choose Zaytrix?
                     </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
+                    <p className="text-lg text-gray-600 leading-relaxed justified-description">
                       As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
                     </p>
                   </div>
@@ -113,7 +112,7 @@ const Home = () => {
                         <h3 className="text-lg font-semibold text-gray-900">
                           Multidisciplinary Expertise
                         </h3>
-                        <p className="text-gray-600 mt-1">
+                        <p className="text-gray-600 mt-1 justified-description">
                           Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
                         </p>
                       </div>
@@ -127,7 +126,7 @@ const Home = () => {
                         <h3 className="text-lg font-semibold text-gray-900">
                           Canadian Focus
                         </h3>
-                        <p className="text-gray-600 mt-1">
+                        <p className="text-gray-600 mt-1 justified-description">
                           Deep understanding of Canadian regulations, business practices, and market requirements.
                         </p>
                       </div>
@@ -141,7 +140,7 @@ const Home = () => {
                         <h3 className="text-lg font-semibold text-gray-900">
                           Innovation & Trust
                         </h3>
-                        <p className="text-gray-600 mt-1">
+                        <p className="text-gray-600 mt-1 justified-description">
                           Cutting-edge solutions delivered with the reliability and trust your business deserves.
                         </p>
                       </div>
@@ -163,7 +162,7 @@ const Home = () => {
                 <h2 className="text-gray-900">
                   Trusted by Leading Organizations
                 </h2>
-                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed justified-description">
                   At Zaytrix Management and Technology Group, we build strong partnerships with businesses across industries, delivering customized solutions that drive success.
                 </p>
               </div>
@@ -225,7 +224,7 @@ const Home = () => {
                   <h2 className="text-white">
                     Ready to Transform Your Business?
                   </h2>
-                  <p className="text-xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
+                  <p className="text-xl text-primary-100 max-w-3xl mx-auto leading-relaxed justified-description">
                     Let's discuss how Zaytrix can help you achieve your goals with our comprehensive technology and business solutions.
                   </p>
                 </div>

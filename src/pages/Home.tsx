@@ -1,11 +1,12 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Quote } from "lucide-react";
+import { ChevronRight, Quote, GraduationCap, MapPin, Shield } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
-import { Mail, Phone, MapPin, Radio, Monitor, Calculator } from "lucide-react";
+import { Mail, Phone, Radio, Monitor, Calculator } from "lucide-react";
 
 const Home = () => {
   return (
@@ -105,7 +106,9 @@ const Home = () => {
 
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
-                      <div className="icon-standard bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <GraduationCap className="w-6 h-6 text-primary" aria-label="Expertise icon" />
+                      </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900">
                           Multidisciplinary Expertise
@@ -117,7 +120,9 @@ const Home = () => {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                      <div className="icon-standard bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-primary" aria-label="Canadian location icon" />
+                      </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900">
                           Canadian Focus
@@ -129,7 +134,9 @@ const Home = () => {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                      <div className="icon-standard bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Shield className="w-6 h-6 text-primary" aria-label="Trust and security icon" />
+                      </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900">
                           Innovation & Trust

@@ -1,7 +1,8 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Handshake, Chip, Flag, Shield } from "lucide-react";
 
 const Services = () => {
   return (
@@ -35,6 +36,9 @@ const Services = () => {
                 src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=800&auto=format&fit=crop" 
                 alt="Modern business technology" 
                 className="rounded-lg shadow-xl w-full h-[400px] object-cover"
+                loading="lazy"
+                width="800"
+                height="400"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-orange-500/20 rounded-lg"></div>
             </div>
@@ -63,6 +67,9 @@ const Services = () => {
                     src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" 
                     alt="Telecommunications infrastructure" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    width="800"
+                    height="400"
                   />
                   <div className="absolute inset-0 bg-blue-600/20"></div>
                 </div>
@@ -107,6 +114,9 @@ const Services = () => {
                     src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop" 
                     alt="Digital technology solutions" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    width="800"
+                    height="400"
                   />
                   <div className="absolute inset-0 bg-orange-500/20"></div>
                 </div>
@@ -151,6 +161,9 @@ const Services = () => {
                     src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
                     alt="Professional management services" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    width="800"
+                    height="400"
                   />
                   <div className="absolute inset-0 bg-green-600/20"></div>
                 </div>
@@ -205,7 +218,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
+                <Handshake className="w-8 h-8 text-blue-600" aria-label="One-stop solutions icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 One-Stop Solutions
@@ -217,7 +230,7 @@ const Services = () => {
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
+                <Chip className="w-8 h-8 text-orange-500" aria-label="Seamless integration icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Seamless Integration
@@ -229,7 +242,7 @@ const Services = () => {
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-green-600 rounded-full"></div>
+                <Flag className="w-8 h-8 text-green-600" aria-label="Canadian expertise icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Canadian Expertise
@@ -241,7 +254,7 @@ const Services = () => {
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
+                <Shield className="w-8 h-8 text-purple-600" aria-label="Proven results icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Proven Results

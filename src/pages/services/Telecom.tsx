@@ -1,7 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Wifi, Network, Headphones, ShieldCheck } from "lucide-react";
 
 const Telecom = () => {
   return (
@@ -38,6 +38,66 @@ const Telecom = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-orange-500/20 rounded-lg"></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Telecom Solutions */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+              Key Telecom Solutions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Modern, reliable and secure connectivity for Canadian enterprise and SMBs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <Wifi size={48} className="text-blue-600 mb-6" aria-label="Network Infrastructure" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Network Infrastructure
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Robust, high-performance network architecture for multisite and remote operations.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <Network size={48} className="text-orange-500 mb-6" aria-label="Unified Communications" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Unified Communications
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Integrated voice, video, and messaging solutions for seamless communication.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <Headphones size={48} className="text-green-600 mb-6" aria-label="VoIP Solutions" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  VoIP Solutions
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Enterprise-grade VoIP platforms for scalable and affordable calling.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <ShieldCheck size={48} className="text-purple-600 mb-6" aria-label="Network Security" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Network Security
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Best-in-class network safeguards and monitoring for compliance and safety.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

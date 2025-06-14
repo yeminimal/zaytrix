@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FilePieChart, ReceiptText, Calculator, Shield } from "lucide-react";
 
 const Accounting = () => {
   return (
@@ -37,6 +38,66 @@ const Accounting = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-green-600/20 to-blue-600/20 rounded-lg"></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accounting Services List */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+              Accounting &amp; Financial Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Strategic financial management and compliance support for your business success.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <FilePieChart size={48} className="text-blue-600 mb-6" aria-label="Financial Reporting" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Financial Reporting
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Timely, accurate financial statements and performance analytics.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <ReceiptText size={48} className="text-orange-500 mb-6" aria-label="Tax Preparation" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Tax Preparation &amp; Planning
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Full-suite tax consulting, filing, and strategy for optimal compliance and savings.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <Calculator size={48} className="text-green-600 mb-6" aria-label="Bookkeeping" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Bookkeeping Services
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Efficient, organized and compliant recordkeeping for any business size.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-gray-200 text-center">
+              <CardContent className="p-8 flex flex-col items-center">
+                <Shield size={48} className="text-purple-600 mb-6" aria-label="Compliance Management" />
+                <h3 className="text-lg font-semibold text-gray-900 tracking-tight mb-2">
+                  Compliance Management
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Comprehensive compliance and risk management for peace of mind.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ const About = () => {
     <>
       <PageHead 
         title="About Us"
-        description="Learn about Zaytrix Management and Technology Group - a Canadian company delivering exceptional results across telecommunications, digital technology, and accounting services."
+        description="Learn about Zaytrix Management and Technology Group - a Canadian company delivering exceptional results across telecommunications, digital technology, and management services."
         keywords="about Zaytrix, Canadian technology company, telecommunications experts, digital transformation, accounting services, business solutions"
         canonicalUrl="https://zaytrix.com/about"
       />
@@ -21,7 +21,7 @@ const About = () => {
         <HeroSection
           title="Building Trust Through"
           subtitle="Innovation"
-          description="Zaytrix is a Canadian company dedicated to delivering exceptional results across telecommunications, digital technology, and accounting services."
+          description="Zaytrix is a Canadian company dedicated to delivering exceptional results across telecommunications, digital technology, and management services."
           image={{
             src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop",
             alt: "Professional business environment showcasing Zaytrix's commitment to excellence"
@@ -43,20 +43,20 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <ServiceCard
                 title="Mission"
-                description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and accounting services."
-                icon={<GraduationCap className="w-12 h-12 text-blue-600" aria-label="Mission icon" />}
+                description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and management services."
+                icon={<GraduationCap className="w-6 h-6 text-blue-600" aria-label="Mission icon" />}
               />
 
               <ServiceCard
                 title="Vision"
                 description="To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients."
-                icon={<Flag className="w-12 h-12 text-orange-500" aria-label="Vision icon" />}
+                icon={<Flag className="w-6 h-6 text-orange-500" aria-label="Vision icon" />}
               />
 
               <ServiceCard
                 title="Values"
                 description="Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery."
-                icon={<Handshake className="w-12 h-12 text-green-600" aria-label="Values icon" />}
+                icon={<Handshake className="w-6 h-6 text-green-600" aria-label="Values icon" />}
               />
             </div>
           </div>
@@ -142,7 +142,7 @@ const About = () => {
                 </h2>
                 <div className="bg-gray-50 rounded-lg p-8">
                   <blockquote className="text-xl text-gray-700 leading-relaxed italic">
-                    "At Zaytrix, we're not just service providers – we're partners in your success. Our commitment to excellence across telecommunications, digital technology, and accounting services reflects our dedication to helping Canadian businesses thrive in an ever-evolving landscape."
+                    "At Zaytrix, we're not just service providers – we're partners in your success. Our commitment to excellence across telecommunications, digital technology, and management services reflects our dedication to helping Canadian businesses thrive in an ever-evolving landscape."
                   </blockquote>
                   <cite className="block mt-6 text-gray-900 font-semibold not-italic">
                     — Zaytrix Leadership Team

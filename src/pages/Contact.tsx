@@ -316,6 +316,24 @@ const Contact = () => {
                 icon={<Calculator className="w-6 h-6 text-primary" />}
               />
             </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+              <Button 
+                asChild
+                size="lg"
+                className="cta-primary"
+              >
+                <a href="/contact">Start Your Project</a>
+              </Button>
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                className="cta-outline"
+              >
+                <a href="/services">View All Services</a>
+              </Button>
+            </div>
           </div>
         </section>
       </div>

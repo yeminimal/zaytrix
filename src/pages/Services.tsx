@@ -57,7 +57,7 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1556484687-30636164638b?q=80&w=800&auto=format&fit=crop" 
+                    src="/Telecomms_1.webp" 
                     alt="Professional telecommunications team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -104,7 +104,7 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" 
+                    src="/digitechs_1.webp" 
                     alt="Digital technology team collaboration" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -151,7 +151,7 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800&auto=format&fit=crop" 
+                    src="/mnmgmts_1.webp" 
                     alt="Professional management team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

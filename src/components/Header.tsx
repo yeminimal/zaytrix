@@ -12,7 +12,7 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="navbar-brand sticky top-0 z-50">
+    <header className="bg-white shadow-lg border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -28,16 +28,16 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`nav-link text-sm font-medium tracking-tight transition-colors ${
-                isActive('/') ? 'active' : ''
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/') ? 'text-primary-900' : ''
               }`}
             >
               Home
             </Link>
             <Link 
               to="/about" 
-              className={`nav-link text-sm font-medium tracking-tight transition-colors ${
-                isActive('/about') ? 'active' : ''
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/about') ? 'text-primary-900' : ''
               }`}
             >
               About
@@ -49,8 +49,8 @@ const Header = () => {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className={`nav-link flex items-center text-sm font-medium tracking-tight transition-colors ${
-                location.pathname.startsWith('/services') ? 'active' : ''
+              <button className={`text-primary-800 hover:text-primary-900 flex items-center text-sm font-medium tracking-tight transition-colors ${
+                location.pathname.startsWith('/services') ? 'text-primary-900' : ''
               }`}>
                 Services
                 <ChevronDown className="ml-1 h-4 w-4" />
@@ -88,16 +88,16 @@ const Header = () => {
 
             <Link 
               to="/careers" 
-              className={`nav-link text-sm font-medium tracking-tight transition-colors ${
-                isActive('/careers') ? 'active' : ''
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/careers') ? 'text-primary-900' : ''
               }`}
             >
               Careers
             </Link>
             <Link 
               to="/contact" 
-              className={`nav-link text-sm font-medium tracking-tight transition-colors ${
-                isActive('/contact') ? 'active' : ''
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/contact') ? 'text-primary-900' : ''
               }`}
             >
               Contact
@@ -117,22 +117,22 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <span className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-              <span className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-              <span className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+              <span className={`bg-primary-800 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+              <span className={`bg-primary-800 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`bg-primary-800 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </div>
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-primary-700 py-4">
+          <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="nav-link font-medium">Home</Link>
-              <Link to="/about" className="nav-link font-medium">About</Link>
-              <Link to="/services" className="nav-link font-medium">Services</Link>
-              <Link to="/careers" className="nav-link font-medium">Careers</Link>
-              <Link to="/contact" className="nav-link font-medium">Contact</Link>
+              <Link to="/" className="text-primary-800 hover:text-primary-900 font-medium">Home</Link>
+              <Link to="/about" className="text-primary-800 hover:text-primary-900 font-medium">About</Link>
+              <Link to="/services" className="text-primary-800 hover:text-primary-900 font-medium">Services</Link>
+              <Link to="/careers" className="text-primary-800 hover:text-primary-900 font-medium">Careers</Link>
+              <Link to="/contact" className="text-primary-800 hover:text-primary-900 font-medium">Contact</Link>
               <Button asChild className="cta-primary w-fit">
                 <Link to="/contact">Get Started</Link>
               </Button>

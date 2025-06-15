@@ -89,7 +89,7 @@ const Accounting = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services Grid - Updated to 2x2 layout */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -101,8 +101,8 @@ const Accounting = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -124,7 +124,7 @@ const Accounting = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -146,7 +146,7 @@ const Accounting = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -168,7 +168,7 @@ const Accounting = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">

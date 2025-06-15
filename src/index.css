@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -125,6 +126,58 @@
     @apply absolute -top-10 left-6 z-50 bg-primary text-primary-foreground px-4 py-2 rounded-md;
     @apply focus:top-6 transition-all duration-200;
   }
+
+  /* Scroll reveal animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer components {
@@ -157,7 +210,7 @@
   }
 
   .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-br from-primary-900/80 to-primary-800/60;
+    @apply absolute inset-0 bg-gradient-to-br from-primary-900/80 to-primary-700/60;
   }
 
   .hero-content {
@@ -187,16 +240,29 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Navigation Bar Styling */
-  .navbar-brand {
-    @apply bg-primary-800 shadow-lg border-primary-700;
+  /* Modern hover effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:translate-y-[-4px];
   }
 
-  .navbar-brand .nav-link {
-    @apply text-white hover:text-primary-100;
+  .hover-glow {
+    @apply transition-shadow duration-300 hover:shadow-xl hover:shadow-primary/20;
   }
 
-  .navbar-brand .nav-link.active {
-    @apply text-primary-100;
+  /* Page transition effects */
+  .page-enter {
+    @apply opacity-0 transform translate-y-4;
+  }
+
+  .page-enter-active {
+    @apply opacity-100 transform translate-y-0 transition-all duration-300 ease-out;
+  }
+
+  .page-exit {
+    @apply opacity-100 transform translate-y-0;
+  }
+
+  .page-exit-active {
+    @apply opacity-0 transform translate-y-4 transition-all duration-300 ease-in;
   }
 }

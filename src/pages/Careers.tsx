@@ -1,7 +1,8 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Flag, Handshake, Heart, Home, Sparkles, Umbrella } from "lucide-react";
+import { Rocket, Flag, Handshake, Heart, Home, Sparkles, Umbrella, Award } from "lucide-react";
 
 const Careers = () => {
   const openPositions = [
@@ -75,7 +76,7 @@ const Careers = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <GraduationCap size={48} className="text-blue-600 mb-6" aria-label="Innovation Focus" />
+                <Rocket size={48} className="text-primary-800 mb-6" aria-label="Innovation Focus" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Innovation Focus
                 </h3>
@@ -87,7 +88,7 @@ const Careers = () => {
 
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <Sparkles size={48} className="text-orange-500 mb-6" aria-label="Career Growth" />
+                <Sparkles size={48} className="text-primary-800 mb-6" aria-label="Career Growth" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Career Growth
                 </h3>
@@ -99,7 +100,7 @@ const Careers = () => {
 
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <Heart size={48} className="text-green-600 mb-6" aria-label="Work-Life Balance" />
+                <Heart size={48} className="text-primary-800 mb-6" aria-label="Work-Life Balance" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Work-Life Balance
                 </h3>
@@ -112,59 +113,60 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Company Culture */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                alt="Collaborative work environment" 
-                className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div className="space-y-8">
+      {/* Our Culture - Updated with overlay styling */}
+      <section className="py-20">
+        <div 
+          className="brand-overlay min-h-[800px] flex items-center"
+          style={{ 
+            backgroundImage: `url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="container-custom">
+            <div className="text-center space-y-8 text-white max-w-4xl mx-auto">
               <div className="space-y-4">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+                <h2>
                   Our Culture
                 </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-white/90 leading-relaxed">
                   At Zaytrix, we foster a collaborative environment where innovation thrives and every team member contributes to our shared success.
                 </p>
               </div>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <Handshake size={24} className="text-blue-600 flex-shrink-0 mt-1" aria-label="Collaborative Excellence" />
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="space-y-4">
+                  <Handshake size={48} className="text-white mx-auto" aria-label="Collaborative Excellence" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                    <h3 className="text-lg font-semibold text-white">
                       Collaborative Excellence
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90 mt-1">
                       Cross-functional teams working together to deliver exceptional results for our clients.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <GraduationCap size={24} className="text-orange-500 flex-shrink-0 mt-1" aria-label="Continuous Learning" />
+                
+                <div className="space-y-4">
+                  <Award size={48} className="text-white mx-auto" aria-label="Continuous Learning" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                    <h3 className="text-lg font-semibold text-white">
                       Continuous Learning
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90 mt-1">
                       Investment in professional development and staying current with industry trends and technologies.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <Flag size={24} className="text-green-600 flex-shrink-0 mt-1" aria-label="Canadian Values" />
+                
+                <div className="space-y-4">
+                  <Flag size={48} className="text-white mx-auto" aria-label="Canadian Values" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                    <h3 className="text-lg font-semibold text-white">
                       Canadian Values
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90 mt-1">
                       Embracing diversity, inclusivity, and the collaborative spirit that defines Canadian business culture.
                     </p>
                   </div>
@@ -219,7 +221,7 @@ const Careers = () => {
                     <div className="flex justify-end">
                       <Button 
                         asChild 
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold tracking-tight"
+                        className="cta-primary"
                       >
                         <Link to="/contact">Apply Now</Link>
                       </Button>
@@ -240,7 +242,7 @@ const Careers = () => {
               </p>
               <Button 
                 asChild 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight"
+                className="cta-primary"
               >
                 <Link to="/contact">Send Your Resume</Link>
               </Button>
@@ -259,7 +261,7 @@ const Careers = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
-              <Umbrella size={48} className="text-primary mx-auto" aria-label="Health & Wellness" />
+              <Umbrella size={48} className="text-primary-800 mx-auto" aria-label="Health & Wellness" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Health & Wellness
               </h3>
@@ -268,7 +270,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <Home size={48} className="text-primary mx-auto" aria-label="Flexible Work" />
+              <Home size={48} className="text-primary-800 mx-auto" aria-label="Flexible Work" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Flexible Work
               </h3>
@@ -277,7 +279,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <GraduationCap size={48} className="text-primary mx-auto" aria-label="Professional Development" />
+              <Award size={48} className="text-primary-800 mx-auto" aria-label="Professional Development" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Professional Development
               </h3>
@@ -286,7 +288,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <Heart size={48} className="text-primary mx-auto" aria-label="Competitive Package" />
+              <Heart size={48} className="text-primary-800 mx-auto" aria-label="Competitive Package" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Competitive Package
               </h3>

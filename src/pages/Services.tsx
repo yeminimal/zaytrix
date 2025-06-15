@@ -57,8 +57,8 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" 
-                    alt="Telecommunications infrastructure" 
+                    src="https://images.unsplash.com/photo-1556484687-30636164638b?q=80&w=800&auto=format&fit=crop" 
+                    alt="Professional telecommunications team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"
@@ -104,8 +104,8 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop" 
-                    alt="Digital technology solutions" 
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" 
+                    alt="Digital technology team collaboration" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"
@@ -151,8 +151,8 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                    alt="Professional management services" 
+                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800&auto=format&fit=crop" 
+                    alt="Professional management team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"

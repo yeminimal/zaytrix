@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
-import { GraduationCap, Flag, Handshake } from "lucide-react";
+import { Target, Flag, Handshake } from "lucide-react";
 
 const About = () => {
   return (
@@ -45,7 +45,7 @@ const About = () => {
               <ServiceCard
                 title="Mission"
                 description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and management services."
-                icon={<GraduationCap className="w-6 h-6 text-primary" aria-label="Mission icon" />}
+                icon={<Target className="w-6 h-6 text-primary" aria-label="Mission icon" />}
               />
 
               <ServiceCard
@@ -63,67 +63,61 @@ const About = () => {
           </div>
         </main>
 
-        {/* Our Approach */}
-        <section className="section-padding bg-gray-50">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                  alt="Modern technology workspace representing our innovative approach" 
-                  className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="400"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="space-y-8">
+        {/* Our Approach - Updated with full-width background and overlay */}
+        <section className="section-padding">
+          <div 
+            className="brand-overlay min-h-[800px] flex items-center"
+            style={{ 
+              backgroundImage: `url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <div className="container-custom">
+              <div className="text-center space-y-8 text-white max-w-4xl mx-auto">
                 <div className="space-y-4">
-                  <h2 className="text-gray-900">
+                  <h2>
                     Our Approach
                   </h2>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-white/90 leading-relaxed">
                     We believe in building long-term partnerships through understanding, innovation, and results.
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-white">
                       Client-Centric Solutions
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-white/90">
                       Every solution is tailored to meet your specific business needs and objectives.
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-white">
                       Integrated Services
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-white/90">
                       Our multidisciplinary approach ensures seamless integration across all your business systems.
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-white">
                       Continuous Innovation
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-white/90">
                       We stay ahead of technology trends to provide you with future-ready solutions.
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-white">
                       Canadian Expertise
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-white/90">
                       Deep understanding of Canadian business landscape, regulations, and opportunities.
                     </p>
                   </div>

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Quote, GraduationCap, MapPin, Shield } from "lucide-react";
+import { ChevronRight, Quote, CheckCircle, MapPin, Handshake } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
@@ -79,10 +79,10 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Why Zaytrix Section - Updated with brand overlay */}
+          {/* Why Zaytrix Section - Updated with full-width image and centered content */}
           <section className="section-padding">
             <div 
-              className="brand-overlay"
+              className="brand-overlay min-h-[800px] flex items-center"
               style={{ 
                 backgroundImage: `url(https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop)`,
                 backgroundSize: 'cover',
@@ -91,74 +91,69 @@ const Home = () => {
               }}
             >
               <div className="container-custom">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  {/* Content */}
-                  <div className="space-y-8 text-white">
-                    <div className="space-y-4">
-                      <h2>
-                        Why Choose Zaytrix?
-                      </h2>
-                      <p className="text-lg text-white/90 leading-relaxed">
-                        As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
-                      </p>
-                    </div>
-
-                    <div className="space-y-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <GraduationCap className="w-6 h-6 text-white" aria-label="Expertise icon" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-white">
-                            Multidisciplinary Expertise
-                          </h3>
-                          <p className="text-white/90 mt-1">
-                            Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <MapPin className="w-6 h-6 text-white" aria-label="Canadian location icon" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-white">
-                            Canadian Focus
-                          </h3>
-                          <p className="text-white/90 mt-1">
-                            Deep understanding of Canadian regulations, business practices, and market requirements.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Shield className="w-6 h-6 text-white" aria-label="Trust and security icon" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-white">
-                            Innovation & Trust
-                          </h3>
-                          <p className="text-white/90 mt-1">
-                            Cutting-edge solutions delivered with the reliability and trust your business deserves.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <Link to="/about" className="cta-primary bg-white text-primary hover:bg-gray-50 inline-block">
-                      Learn About Us
-                    </Link>
+                <div className="text-center space-y-8 text-white max-w-4xl mx-auto">
+                  <div className="space-y-4">
+                    <h2>
+                      Why Choose Zaytrix?
+                    </h2>
+                    <p className="text-lg text-white/90 leading-relaxed">
+                      As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
+                    </p>
                   </div>
-                  {/* Empty space for balance */}
-                  <div></div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="space-y-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                        <CheckCircle className="w-6 h-6 text-white" aria-label="Expertise icon" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-white">
+                          Multidisciplinary Expertise
+                        </h3>
+                        <p className="text-white/90 mt-1">
+                          Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                        <MapPin className="w-6 h-6 text-white" aria-label="Canadian location icon" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-white">
+                          Canadian Focus
+                        </h3>
+                        <p className="text-white/90 mt-1">
+                          Deep understanding of Canadian regulations, business practices, and market requirements.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                        <Handshake className="w-6 h-6 text-white" aria-label="Trust and innovation icon" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-white">
+                          Innovation & Trust
+                        </h3>
+                        <p className="text-white/90 mt-1">
+                          Cutting-edge solutions delivered with the reliability and trust your business deserves.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Link to="/about" className="cta-primary bg-white text-primary hover:bg-gray-50 inline-block">
+                    Learn About Us
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Client Testimonials */}
+          {/* Client Testimonials - Updated positioning */}
           <section className="section-padding bg-white">
             <div className="container-custom">
               <div className="text-center space-y-4 mb-16">
@@ -193,7 +188,7 @@ const Home = () => {
                       <blockquote className="text-gray-700 leading-relaxed">
                         "Their IoT Solutions transformed our smart city infrastructure. Zaytrix's team delivered practical, innovative solutions that exceeded our expectations."
                       </blockquote>
-                      <div className="space-y-1">
+                      <div className="space-y-1 mt-6">
                         <div className="font-semibold text-gray-900">John Wood</div>
                         <div className="text-sm text-gray-600">Smart City Project Manager</div>
                       </div>
@@ -208,7 +203,7 @@ const Home = () => {
                       <blockquote className="text-gray-700 leading-relaxed">
                         "Zaytrix's Fiber Optic Services and Site Maintenance significantly improved our network reliability. Their proactive approach reduced downtime considerably."
                       </blockquote>
-                      <div className="space-y-1">
+                      <div className="space-y-1 mt-6">
                         <div className="font-semibold text-gray-900">Greg Howthin</div>
                         <div className="text-sm text-gray-600">Infrastructure Director</div>
                       </div>

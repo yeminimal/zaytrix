@@ -88,7 +88,7 @@ const Accounting = () => {
         </div>
       </section>
 
-      {/* Services Grid - Updated to strict 2x2 layout for desktop only */}
+      {/* Services Grid - Explicit 2x2 layout for desktop */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -101,10 +101,10 @@ const Accounting = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            {/* Mobile/Tablet: Single column, Desktop: 2x2 Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* First Row - Bookkeeping & Accounting and Tax Preparation & Planning */}
-              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+            {/* Explicit 2x2 Grid: Mobile single column, Desktop 2x2 */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-8">
+              {/* Row 1, Col 1: Bookkeeping & Accounting */}
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-1 lg:col-start-1">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -126,7 +126,8 @@ const Accounting = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+              {/* Row 1, Col 2: Tax Preparation & Planning */}
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-1 lg:col-start-2">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -148,8 +149,8 @@ const Accounting = () => {
                 </CardContent>
               </Card>
 
-              {/* Second Row - Financial Reporting and Compliance Management */}
-              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+              {/* Row 2, Col 1: Financial Reporting */}
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-2 lg:col-start-1">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -171,7 +172,8 @@ const Accounting = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+              {/* Row 2, Col 2: Compliance Management */}
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-2 lg:col-start-2">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">

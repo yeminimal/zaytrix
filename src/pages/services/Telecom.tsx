@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -89,7 +88,7 @@ const Telecom = () => {
         </div>
       </section>
 
-      {/* Services Grid - Updated to strict 2x2 layout */}
+      {/* Services Grid - Updated to strict 2x2 layout for desktop only */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -102,8 +101,9 @@ const Telecom = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            {/* First Row - VoIP Solutions and Network Infrastructure */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            {/* Mobile/Tablet: Single column, Desktop: 2x2 Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* First Row - VoIP Solutions and Network Infrastructure */}
               <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">
@@ -147,10 +147,8 @@ const Telecom = () => {
                   </ul>
                 </CardContent>
               </Card>
-            </div>
 
-            {/* Second Row - Unified Communications and Network Security */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Second Row - Unified Communications and Network Security */}
               <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-center space-x-4">

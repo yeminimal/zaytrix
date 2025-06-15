@@ -101,94 +101,100 @@ const Telecom = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-primary-800" />
+          <div className="max-w-6xl mx-auto">
+            {/* First Row - VoIP Solutions and Network Infrastructure */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+                <CardContent className="p-8 space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-primary-800" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 tracking-tight">
+                      VoIP Solutions
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 tracking-tight">
-                    VoIP Solutions
-                  </h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  Modern voice communication systems with crystal-clear quality, advanced features, and cost-effective pricing.
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• HD voice quality</li>
-                  <li>• Conference calling</li>
-                  <li>• Mobile integration</li>
-                  <li>• Call analytics</li>
-                </ul>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600 leading-relaxed">
+                    Modern voice communication systems with crystal-clear quality, advanced features, and cost-effective pricing.
+                  </p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>• HD voice quality</li>
+                    <li>• Conference calling</li>
+                    <li>• Mobile integration</li>
+                    <li>• Call analytics</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Wifi className="w-6 h-6 text-primary-800" />
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+                <CardContent className="p-8 space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <Wifi className="w-6 h-6 text-primary-800" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 tracking-tight">
+                      Network Infrastructure
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 tracking-tight">
-                    Network Infrastructure
-                  </h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  Design and implementation of robust network infrastructure tailored to your business requirements.
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Custom network design</li>
-                  <li>• Fiber optic solutions</li>
-                  <li>• Wireless networks</li>
-                  <li>• Network optimization</li>
-                </ul>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600 leading-relaxed">
+                    Design and implementation of robust network infrastructure tailored to your business requirements.
+                  </p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>• Custom network design</li>
+                    <li>• Fiber optic solutions</li>
+                    <li>• Wireless networks</li>
+                    <li>• Network optimization</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Building className="w-6 h-6 text-primary-800" />
+            {/* Second Row - Unified Communications and Network Security */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+                <CardContent className="p-8 space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <Building className="w-6 h-6 text-primary-800" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 tracking-tight">
+                      Unified Communications
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 tracking-tight">
-                    Unified Communications
-                  </h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  Integrate voice, video, messaging, and collaboration tools into a unified platform for seamless communication.
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Video conferencing</li>
-                  <li>• Instant messaging</li>
-                  <li>• Screen sharing</li>
-                  <li>• Mobile apps</li>
-                </ul>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600 leading-relaxed">
+                    Integrate voice, video, messaging, and collaboration tools into a unified platform for seamless communication.
+                  </p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>• Video conferencing</li>
+                    <li>• Instant messaging</li>
+                    <li>• Screen sharing</li>
+                    <li>• Mobile apps</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary-800" />
+              <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
+                <CardContent className="p-8 space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <Shield className="w-6 h-6 text-primary-800" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 tracking-tight">
+                      Network Security
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 tracking-tight">
-                    Network Security
-                  </h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  Comprehensive security solutions to protect your network infrastructure and communications from threats.
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Firewall management</li>
-                  <li>• Intrusion detection</li>
-                  <li>• VPN solutions</li>
-                  <li>• Security monitoring</li>
-                </ul>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600 leading-relaxed">
+                    Comprehensive security solutions to protect your network infrastructure and communications from threats.
+                  </p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>• Firewall management</li>
+                    <li>• Intrusion detection</li>
+                    <li>• VPN solutions</li>
+                    <li>• Security monitoring</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

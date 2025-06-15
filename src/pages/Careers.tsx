@@ -113,10 +113,10 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Our Culture - Updated with overlay styling */}
+      {/* Our Culture - Updated with reduced height and improved spacing */}
       <section className="py-20">
         <div 
-          className="brand-overlay min-h-[800px] flex items-center"
+          className="brand-overlay min-h-[500px] flex items-center"
           style={{ 
             backgroundImage: `url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop)`,
             backgroundSize: 'cover',
@@ -125,8 +125,8 @@ const Careers = () => {
           }}
         >
           <div className="container-custom">
-            <div className="text-center space-y-8 text-white max-w-4xl mx-auto">
-              <div className="space-y-4">
+            <div className="text-center space-y-12 text-white max-w-4xl mx-auto">
+              <div className="space-y-6">
                 <h2>
                   Our Culture
                 </h2>
@@ -135,38 +135,44 @@ const Careers = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="space-y-4">
-                  <Handshake size={48} className="text-white mx-auto" aria-label="Collaborative Excellence" />
-                  <div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Handshake className="w-6 h-6 text-white" aria-label="Collaborative Excellence" />
+                  </div>
+                  <div className="space-y-3">
                     <h3 className="text-lg font-semibold text-white">
                       Collaborative Excellence
                     </h3>
-                    <p className="text-white/90 mt-1">
+                    <p className="text-white/90">
                       Cross-functional teams working together to deliver exceptional results for our clients.
                     </p>
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <Award size={48} className="text-white mx-auto" aria-label="Continuous Learning" />
-                  <div>
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Award className="w-6 h-6 text-white" aria-label="Continuous Learning" />
+                  </div>
+                  <div className="space-y-3">
                     <h3 className="text-lg font-semibold text-white">
                       Continuous Learning
                     </h3>
-                    <p className="text-white/90 mt-1">
+                    <p className="text-white/90">
                       Investment in professional development and staying current with industry trends and technologies.
                     </p>
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <Flag size={48} className="text-white mx-auto" aria-label="Canadian Values" />
-                  <div>
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Flag className="w-6 h-6 text-white" aria-label="Canadian Values" />
+                  </div>
+                  <div className="space-y-3">
                     <h3 className="text-lg font-semibold text-white">
                       Canadian Values
                     </h3>
-                    <p className="text-white/90 mt-1">
+                    <p className="text-white/90">
                       Embracing diversity, inclusivity, and the collaborative spirit that defines Canadian business culture.
                     </p>
                   </div>
@@ -221,7 +227,7 @@ const Careers = () => {
                     <div className="flex justify-end">
                       <Button 
                         asChild 
-                        className="cta-primary"
+                        className="bg-primary-800 text-white hover:bg-primary-900 font-semibold tracking-tight"
                       >
                         <Link to="/contact">Apply Now</Link>
                       </Button>
@@ -242,7 +248,7 @@ const Careers = () => {
               </p>
               <Button 
                 asChild 
-                className="cta-primary"
+                className="bg-primary-800 text-white hover:bg-primary-900 font-semibold tracking-tight"
               >
                 <Link to="/contact">Send Your Resume</Link>
               </Button>

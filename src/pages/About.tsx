@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
-import { Target, Flag, Handshake } from "lucide-react";
+import { Target, Flag, Handshake, Users, Lightbulb, Award, CheckCircle } from "lucide-react";
 
 const About = () => {
   return (
@@ -63,7 +63,7 @@ const About = () => {
           </div>
         </main>
 
-        {/* Our Approach - Updated with full-width background and overlay */}
+        {/* Our Approach - Updated with no rounded corners and improved spacing */}
         <section className="section-padding">
           <div 
             className="brand-overlay min-h-[800px] flex items-center"
@@ -75,8 +75,8 @@ const About = () => {
             }}
           >
             <div className="container-custom">
-              <div className="text-center space-y-8 text-white max-w-4xl mx-auto">
-                <div className="space-y-4">
+              <div className="text-center space-y-12 text-white max-w-4xl mx-auto">
+                <div className="space-y-6">
                   <h2>
                     Our Approach
                   </h2>
@@ -85,41 +85,61 @@ const About = () => {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-white">
-                      Client-Centric Solutions
-                    </h3>
-                    <p className="text-white/90">
-                      Every solution is tailored to meet your specific business needs and objectives.
-                    </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold text-white">
+                        Client-Centric Solutions
+                      </h3>
+                      <p className="text-white/90">
+                        Every solution is tailored to meet your specific business needs and objectives.
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-white">
-                      Integrated Services
-                    </h3>
-                    <p className="text-white/90">
-                      Our multidisciplinary approach ensures seamless integration across all your business systems.
-                    </p>
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                      <CheckCircle className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold text-white">
+                        Integrated Services
+                      </h3>
+                      <p className="text-white/90">
+                        Our multidisciplinary approach ensures seamless integration across all your business systems.
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-white">
-                      Continuous Innovation
-                    </h3>
-                    <p className="text-white/90">
-                      We stay ahead of technology trends to provide you with future-ready solutions.
-                    </p>
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                      <Lightbulb className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold text-white">
+                        Continuous Innovation
+                      </h3>
+                      <p className="text-white/90">
+                        We stay ahead of technology trends to provide you with future-ready solutions.
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-white">
-                      Canadian Expertise
-                    </h3>
-                    <p className="text-white/90">
-                      Deep understanding of Canadian business landscape, regulations, and opportunities.
-                    </p>
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                      <Flag className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold text-white">
+                        Canadian Expertise
+                      </h3>
+                      <p className="text-white/90">
+                        Deep understanding of Canadian business landscape, regulations, and opportunities.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

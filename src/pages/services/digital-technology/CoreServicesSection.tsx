@@ -15,7 +15,7 @@ const CoreServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="group hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
             <CardContent className="p-0">
               <div className="relative h-48 overflow-hidden rounded-t-lg">

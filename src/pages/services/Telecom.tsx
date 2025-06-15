@@ -89,7 +89,7 @@ const Telecom = () => {
         </div>
       </section>
 
-      {/* Services Grid - Updated to 2x2 layout */}
+      {/* Services Grid - Updated to strict 2x2 layout */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -101,7 +101,7 @@ const Telecom = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">

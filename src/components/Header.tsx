@@ -128,13 +128,13 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-primary-800 hover:text-primary-900 font-medium">Home</Link>
-              <Link to="/about" className="text-primary-800 hover:text-primary-900 font-medium">About</Link>
-              <Link to="/services" className="text-primary-800 hover:text-primary-900 font-medium">Services</Link>
-              <Link to="/careers" className="text-primary-800 hover:text-primary-900 font-medium">Careers</Link>
-              <Link to="/contact" className="text-primary-800 hover:text-primary-900 font-medium">Contact</Link>
+              <Link to="/" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/about" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>About</Link>
+              <Link to="/services" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Services</Link>
+              <Link to="/careers" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Careers</Link>
+              <Link to="/contact" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               <Button asChild className="cta-primary w-fit">
-                <Link to="/contact">Get Started</Link>
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Get Started</Link>
               </Button>
             </div>
           </div>
@@ -145,3 +145,4 @@ const Header = () => {
 };
 
 export default Header;
+

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { BookOpen, TrendingUp, Users } from "lucide-react";
 
@@ -25,7 +24,7 @@ const ELearningSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 px-3 sm:px-0">
               <div className="space-y-6">
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
                   <BookOpen className="w-6 h-6 text-white" />

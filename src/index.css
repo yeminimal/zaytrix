@@ -299,3 +299,4 @@ button:hover, button:active, [role="button"]:hover, [role="button"]:active {
 .story-link:hover:after, a.underline-animate:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}

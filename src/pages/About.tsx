@@ -79,9 +79,9 @@ const About = () => {
               backgroundRepeat: 'no-repeat'
             }}
           >
-            <div className="container-custom">
-              <div className="text-center space-y-12 text-white max-w-4xl mx-auto">
-                <div className="space-y-6">
+            <div className="container-custom py-10 sm:py-20">
+              <div className="text-center space-y-10 sm:space-y-12 text-white max-w-4xl mx-auto">
+                <div className="space-y-4 sm:space-y-6">
                   <h2>
                     Our Approach
                   </h2>
@@ -89,8 +89,7 @@ const About = () => {
                     We believe in building long-term partnerships through understanding, innovation, and results.
                   </p>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 px-3 sm:px-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 md:gap-y-12 gap-x-6 md:gap-x-12 px-3 sm:px-0">
                   <div className="space-y-4">
                     <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
                       <Users className="w-6 h-6 text-white" />

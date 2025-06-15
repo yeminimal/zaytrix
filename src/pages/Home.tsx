@@ -79,78 +79,80 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Why Zaytrix Section */}
-          <section className="section-padding bg-gray-50">
-            <div className="container-custom">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Image */}
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" 
-                    alt="Advanced technology infrastructure representing Zaytrix's capabilities" 
-                    className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-                    loading="lazy"
-                  />
-                </div>
+          {/* Why Zaytrix Section - Updated with brand overlay */}
+          <section className="section-padding">
+            <div 
+              className="brand-overlay"
+              style={{ 
+                backgroundImage: `url(https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop)`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            >
+              <div className="container-custom">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  {/* Content */}
+                  <div className="space-y-8 text-white">
+                    <div className="space-y-4">
+                      <h2>
+                        Why Choose Zaytrix?
+                      </h2>
+                      <p className="text-lg text-white/90 leading-relaxed">
+                        As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
+                      </p>
+                    </div>
 
-                {/* Content */}
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <h2 className="text-gray-900">
-                      Why Choose Zaytrix?
-                    </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
-                    </p>
+                    <div className="space-y-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <GraduationCap className="w-6 h-6 text-white" aria-label="Expertise icon" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">
+                            Multidisciplinary Expertise
+                          </h3>
+                          <p className="text-white/90 mt-1">
+                            Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MapPin className="w-6 h-6 text-white" aria-label="Canadian location icon" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">
+                            Canadian Focus
+                          </h3>
+                          <p className="text-white/90 mt-1">
+                            Deep understanding of Canadian regulations, business practices, and market requirements.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Shield className="w-6 h-6 text-white" aria-label="Trust and security icon" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">
+                            Innovation & Trust
+                          </h3>
+                          <p className="text-white/90 mt-1">
+                            Cutting-edge solutions delivered with the reliability and trust your business deserves.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Link to="/about" className="cta-primary bg-white text-primary hover:bg-gray-50 inline-block">
+                      Learn About Us
+                    </Link>
                   </div>
-
-                  <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <GraduationCap className="w-6 h-6 text-primary" aria-label="Expertise icon" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          Multidisciplinary Expertise
-                        </h3>
-                        <p className="text-gray-600 mt-1">
-                          Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-primary" aria-label="Canadian location icon" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          Canadian Focus
-                        </h3>
-                        <p className="text-gray-600 mt-1">
-                          Deep understanding of Canadian regulations, business practices, and market requirements.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Shield className="w-6 h-6 text-primary" aria-label="Trust and security icon" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          Innovation & Trust
-                        </h3>
-                        <p className="text-gray-600 mt-1">
-                          Cutting-edge solutions delivered with the reliability and trust your business deserves.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Link to="/about" className="cta-primary inline-block">
-                    Learn About Us
-                  </Link>
+                  {/* Empty space for balance */}
+                  <div></div>
                 </div>
               </div>
             </div>

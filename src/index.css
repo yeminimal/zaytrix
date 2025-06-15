@@ -26,6 +26,7 @@
     --primary-600: 217 91% 50%;
     --primary-700: 217 91% 45%;
     --primary-800: 217 91% 40%;
+    --primary-900: 217 91% 35%;
 
     /* Grayscale Support Colors Only */
     --secondary: 210 40% 96.1%;
@@ -142,13 +143,40 @@
     text-align: justify;
   }
   
-  /* CTA Button Consistency */
+  /* CTA Button Consistency - Updated to use only brand blue */
   .cta-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
+    @apply bg-primary text-primary-foreground hover:bg-primary-700 px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
   }
 
   .cta-outline {
     @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
+  }
+
+  /* Hero Section with Full-Width Background */
+  .hero-fullwidth {
+    @apply relative bg-cover bg-center bg-no-repeat min-h-[600px] flex items-center;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-br from-primary-900/80 to-primary-700/60;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-white;
+  }
+
+  /* Brand Blue Gradient Overlay */
+  .brand-overlay {
+    @apply relative;
+  }
+
+  .brand-overlay::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary-800/90 to-primary-600/80 rounded-lg;
+  }
+
+  .brand-overlay > * {
+    @apply relative z-10;
   }
 
   /* Section Spacing */
@@ -158,5 +186,18 @@
 
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Navigation Bar Styling */
+  .navbar-brand {
+    @apply bg-primary-800 shadow-lg border-primary-700;
+  }
+
+  .navbar-brand .nav-link {
+    @apply text-white hover:text-primary-100;
+  }
+
+  .navbar-brand .nav-link.active {
+    @apply text-primary-100;
   }
 }

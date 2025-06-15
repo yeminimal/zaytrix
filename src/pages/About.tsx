@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -44,19 +45,19 @@ const About = () => {
               <ServiceCard
                 title="Mission"
                 description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and management services."
-                icon={<GraduationCap className="w-6 h-6 text-blue-600" aria-label="Mission icon" />}
+                icon={<GraduationCap className="w-6 h-6 text-primary" aria-label="Mission icon" />}
               />
 
               <ServiceCard
                 title="Vision"
                 description="To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients."
-                icon={<Flag className="w-6 h-6 text-orange-500" aria-label="Vision icon" />}
+                icon={<Flag className="w-6 h-6 text-primary" aria-label="Vision icon" />}
               />
 
               <ServiceCard
                 title="Values"
                 description="Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery."
-                icon={<Handshake className="w-6 h-6 text-green-600" aria-label="Values icon" />}
+                icon={<Handshake className="w-6 h-6 text-primary" aria-label="Values icon" />}
               />
             </div>
           </div>

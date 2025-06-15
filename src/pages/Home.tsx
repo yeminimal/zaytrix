@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,14 @@ import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
 import { Mail, Phone, Radio, Monitor, Calculator } from "lucide-react";
+import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 const Home = () => {
+  const servicesRef = useInViewAnimation();
+  const whyRef = useInViewAnimation();
+  const testimonialsRef = useInViewAnimation();
+  const ctaRef = useInViewAnimation();
+
   return (
     <>
       <PageHead 
@@ -46,7 +51,10 @@ const Home = () => {
         {/* Main Content */}
         <main id="main-content">
           {/* Services Overview */}
-          <section className="section-padding bg-white">
+          <section
+            ref={servicesRef}
+            className="section-padding bg-white opacity-0"
+          >
             <div className="container-custom">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-gray-900">
@@ -79,8 +87,11 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Why Zaytrix Section - Updated with increased spacing and no rounded corners */}
-          <section className="section-padding">
+          {/* Why Zaytrix Section */}
+          <section
+            ref={whyRef}
+            className="section-padding opacity-0"
+          >
             <div 
               className="brand-overlay min-h-[800px] flex items-center"
               style={{ 
@@ -153,8 +164,11 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Client Testimonials - Updated positioning for consistency */}
-          <section className="section-padding bg-white">
+          {/* Client Testimonials */}
+          <section
+            ref={testimonialsRef}
+            className="section-padding bg-white opacity-0"
+          >
             <div className="container-custom">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-gray-900">
@@ -215,7 +229,10 @@ const Home = () => {
           </section>
 
           {/* CTA Section */}
-          <section className="section-padding bg-primary">
+          <section
+            ref={ctaRef}
+            className="section-padding bg-primary opacity-0"
+          >
             <div className="container-custom text-center">
               <div className="space-y-8">
                 <div className="space-y-4">

@@ -1,15 +1,21 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Handshake, Zap, Flag, Shield } from "lucide-react";
+import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 const Services = () => {
+  const heroRef = useInViewAnimation();
+  const gridRef = useInViewAnimation();
+  const advantageRef = useInViewAnimation();
+  const ctaRef = useInViewAnimation();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="hero-fullwidth"
+      <section
+        ref={heroRef}
+        className="hero-fullwidth opacity-0"
         style={{ backgroundImage: `url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=800&auto=format&fit=crop)` }}
       >
         <div className="hero-overlay"></div>
@@ -40,7 +46,10 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section
+        ref={gridRef}
+        className="py-20 bg-white opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
@@ -197,7 +206,10 @@ const Services = () => {
       </section>
 
       {/* Why Choose Our Integrated Approach */}
-      <section className="py-20 bg-gray-50">
+      <section
+        ref={advantageRef}
+        className="py-20 bg-gray-50 opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
@@ -261,7 +273,10 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      <section
+        ref={ctaRef}
+        className="py-20 bg-primary opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">

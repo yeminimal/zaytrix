@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -6,8 +5,14 @@ import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
 import { Target, Flag, Handshake, Users, Lightbulb, Award, CheckCircle } from "lucide-react";
+import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 const About = () => {
+  const foundationRef = useInViewAnimation();
+  const approachRef = useInViewAnimation();
+  const leadershipRef = useInViewAnimation();
+  const ctaRef = useInViewAnimation();
+
   return (
     <>
       <PageHead 
@@ -30,7 +35,7 @@ const About = () => {
         />
 
         {/* Mission, Vision, Values */}
-        <main className="section-padding bg-white">
+        <main ref={foundationRef} className="section-padding bg-white opacity-0">
           <div className="container-custom">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-gray-900">
@@ -64,7 +69,7 @@ const About = () => {
         </main>
 
         {/* Our Approach - Updated with no rounded corners and improved spacing */}
-        <section className="section-padding">
+        <section ref={approachRef} className="section-padding opacity-0">
           <div 
             className="brand-overlay min-h-[800px] flex items-center"
             style={{ 
@@ -148,7 +153,7 @@ const About = () => {
         </section>
 
         {/* Leadership Statement */}
-        <section className="section-padding bg-white">
+        <section ref={leadershipRef} className="section-padding bg-white opacity-0">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <div className="space-y-4">
@@ -169,7 +174,7 @@ const About = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-primary">
+        <section ref={ctaRef} className="section-padding bg-primary opacity-0">
           <div className="container-custom text-center">
             <div className="space-y-8">
               <div className="space-y-4">

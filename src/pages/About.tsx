@@ -47,24 +47,75 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <ServiceCard
-                title="Mission"
-                description="To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and management services."
-                icon={<Target className="w-6 h-6 text-primary" aria-label="Mission icon" />}
-              />
+  {/* Mission */}
+  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
+    <div className="relative h-48 overflow-hidden rounded-t-lg">
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop"
+        alt="Mission"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+        width="800"
+        height="400"
+      />
+      <div className="absolute inset-0 bg-blue-600/20"></div>
+    </div>
+    <div className="p-8 space-y-3">
+      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
+        Mission
+      </h3>
+      <p className="text-gray-600 leading-relaxed">
+        To empower Canadian businesses with innovative, reliable, and comprehensive solutions across telecommunications, digital technology, and management services.
+      </p>
+    </div>
+  </div>
 
-              <ServiceCard
-                title="Vision"
-                description="To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients."
-                icon={<Flag className="w-6 h-6 text-primary" aria-label="Vision icon" />}
-              />
+  {/* Vision */}
+  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
+    <div className="relative h-48 overflow-hidden rounded-t-lg">
+      <img
+        src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=800&auto=format&fit=crop"
+        alt="Vision"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+        width="800"
+        height="400"
+      />
+      <div className="absolute inset-0 bg-orange-500/20"></div>
+    </div>
+    <div className="p-8 space-y-3">
+      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
+        Vision
+      </h3>
+      <p className="text-gray-600 leading-relaxed">
+        To be Canada's most trusted multidisciplinary technology and business services partner, driving innovation and success for our clients.
+      </p>
+    </div>
+  </div>
 
-              <ServiceCard
-                title="Values"
-                description="Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery."
-                icon={<Handshake className="w-6 h-6 text-primary" aria-label="Values icon" />}
-              />
-            </div>
+  {/* Values */}
+  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
+    <div className="relative h-48 overflow-hidden rounded-t-lg">
+      <img
+        src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=800&auto=format&fit=crop"
+        alt="Values"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+        width="800"
+        height="400"
+      />
+      <div className="absolute inset-0 bg-green-600/20"></div>
+    </div>
+    <div className="p-8 space-y-3">
+      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
+        Values
+      </h3>
+      <p className="text-gray-600 leading-relaxed">
+        Excellence, integrity, innovation, and client success. We build lasting relationships through trust and exceptional service delivery.
+      </p>
+    </div>
+  </div>
+</div>
           </div>
         </main>
 

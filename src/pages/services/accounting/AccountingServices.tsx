@@ -20,7 +20,7 @@ const AccountingServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
+                    src="/FinRep.webp"
                     alt="Financial Reporting"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -49,7 +49,7 @@ const AccountingServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=800&auto=format&fit=crop"
+                    src="/TaxPrep.webp"
                     alt="Tax Preparation & Planning"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -78,7 +78,7 @@ const AccountingServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=800&auto=format&fit=crop"
+                    src="/BookKeep.webp"
                     alt="Bookkeeping Services"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -107,7 +107,7 @@ const AccountingServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1508385082359-f48c0dca1e8c?q=80&w=800&auto=format&fit=crop"
+                    src="/CompMng.webp"
                     alt="Compliance Management"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

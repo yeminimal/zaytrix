@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -20,47 +19,43 @@ const Header = () => {
             <img 
               src="/lovable-uploads/3e7c2dfe-fc30-4af0-8d06-e26ac3d7ec0c.png" 
               alt="Zaytrix Logo" 
-              className="h-8 w-auto"
+              className="block"
+              style={{
+                height: "48px",
+                width: "auto",
+                maxHeight: "56px",
+                minWidth: "128px",
+                objectFit: "contain",
+              }}
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             <Link 
               to="/" 
-              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${isActive('/') ? 'text-primary-900' : ''}`}
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/') ? 'text-primary-900' : ''
+              }`}
             >
               Home
             </Link>
-            <Link 
-              to="/about" 
-              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
-                isActive('/about') ? 'text-primary-900' : ''
-              }`}
-            >
-              About
-            </Link>
-            
-            {/* Services Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className={`text-primary-800 hover:text-primary-900 flex items-center text-sm font-medium tracking-tight transition-colors ${location.pathname.startsWith('/services') ? 'text-primary-900' : ''}`}
-               >
+              <button
+                className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight flex items-center transition-colors ${
+                  isActive('/services') ? 'text-primary-900' : ''
+                }`}
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                type="button"
+              >
                 Services
-                <ChevronDown className="ml-1 h-4 w-4" />
+                <ChevronDown className="ml-1 w-4 h-4" />
               </button>
-              
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-md shadow-lg border border-gray-100 py-2">
-                  <Link 
-                    to="/services" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
-                  >
-                    Services Overview
-                  </Link>
+                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
                   <Link 
                     to="/services/telecom" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
@@ -125,12 +120,75 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/about" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>About</Link>
-              <Link to="/services" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link to="/careers" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Careers</Link>
-              <Link to="/contact" className="text-primary-800 hover:text-primary-900 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-              <Button asChild className="cta-primary w-fit">
+              <Link 
+                to="/" 
+                className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                  isActive('/') ? 'text-primary-900' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <div className="relative">
+                <button
+                  className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight flex items-center transition-colors ${
+                    isActive('/services') ? 'text-primary-900' : ''
+                  }`}
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  type="button"
+                >
+                  Services
+                  <ChevronDown className="ml-1 w-4 h-4" />
+                </button>
+                {isServicesOpen && (
+                  <div className="ml-4 mt-1 space-y-1">
+                    <Link 
+                      to="/services/telecom" 
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Telecommunications
+                    </Link>
+                    <Link 
+                      to="/services/digital-technology" 
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Digital Technology
+                    </Link>
+                    <Link 
+                      to="/services/accounting" 
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Management
+                    </Link>
+                  </div>
+                )}
+              </div>
+              <Link 
+                to="/careers" 
+                className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                  isActive('/careers') ? 'text-primary-900' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Careers
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                  isActive('/contact') ? 'text-primary-900' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+
+              <Button 
+                asChild 
+                className="cta-primary"
+              >
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Get Started</Link>
               </Button>
             </div>
@@ -142,4 +200,3 @@ const Header = () => {
 };
 
 export default Header;
-

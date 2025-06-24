@@ -16,7 +16,9 @@ const Services = () => {
       <section
         ref={heroRef}
         className="hero-fullwidth opacity-0"
-        style={{ backgroundImage: `url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=800&auto=format&fit=crop)` }}
+        image={{
+          src: "/Image9.webp",
+        }}
       >
         <div className="hero-overlay"></div>
         <div className="container-custom">

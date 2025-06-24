@@ -2,51 +2,56 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Handshake, Zap, Flag, Shield } from "lucide-react";
+import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 const Services = () => {
+  const heroRef = useInViewAnimation();
+  const gridRef = useInViewAnimation();
+  const advantageRef = useInViewAnimation();
+  const ctaRef = useInViewAnimation();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        ref={heroRef}
+        className="hero-fullwidth opacity-0"
+        image={{
+          src: "/public/Image9.webp",
+        }}
+      >
+        <div className="hero-overlay"></div>
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
-            <div className="space-y-8">
+            <div className="hero-content space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  Comprehensive <span className="text-blue-600">Business Solutions</span>
+                <h1 className="leading-tight">
+                  Comprehensive <span className="text-primary-100">Business Solutions</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-white/90 leading-relaxed">
                   From telecommunications infrastructure to digital transformation and financial management, we provide integrated solutions that drive business success.
                 </p>
               </div>
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight"
+                className="cta-primary bg-white text-primary hover:bg-gray-50"
               >
                 <Link to="/contact">Discuss Your Needs</Link>
               </Button>
             </div>
-
-            {/* Right: Image */}
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=800&auto=format&fit=crop" 
-                alt="Modern business technology" 
-                className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-                loading="lazy"
-                width="800"
-                height="400"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-orange-500/20 rounded-lg"></div>
-            </div>
+            {/* Right: Empty space for balance */}
+            <div></div>
           </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section
+        ref={gridRef}
+        className="py-20 bg-white opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
@@ -63,14 +68,14 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" 
-                    alt="Telecommunications infrastructure" 
+                    src="/Telecomms_1.webp" 
+                    alt="Professional telecommunications team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"
                     height="400"
                   />
-                  <div className="absolute inset-0 bg-blue-600/20"></div>
+                  <div className="absolute inset-0 bg-primary/20"></div>
                 </div>
                 <div className="p-8 space-y-6">
                   <div className="space-y-3">
@@ -94,7 +99,7 @@ const Services = () => {
 
                   <Button 
                     asChild 
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold tracking-tight group"
+                    className="w-full cta-primary group"
                   >
                     <Link to="/services/telecom" className="flex items-center justify-center">
                       Explore Telecommunications
@@ -110,14 +115,14 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop" 
-                    alt="Digital technology solutions" 
+                    src="/digitechs_1.webp" 
+                    alt="Digital technology team collaboration" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"
                     height="400"
                   />
-                  <div className="absolute inset-0 bg-orange-500/20"></div>
+                  <div className="absolute inset-0 bg-primary/20"></div>
                 </div>
                 <div className="p-8 space-y-6">
                   <div className="space-y-3">
@@ -141,7 +146,7 @@ const Services = () => {
 
                   <Button 
                     asChild 
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight group"
+                    className="w-full cta-primary group"
                   >
                     <Link to="/services/digital-technology" className="flex items-center justify-center">
                       Explore Digital Technology
@@ -157,14 +162,14 @@ const Services = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                    alt="Professional management services" 
+                    src="/mnmgmts_1.webp" 
+                    alt="Professional management team" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     width="800"
                     height="400"
                   />
-                  <div className="absolute inset-0 bg-green-600/20"></div>
+                  <div className="absolute inset-0 bg-primary/20"></div>
                 </div>
                 <div className="p-8 space-y-6">
                   <div className="space-y-3">
@@ -188,7 +193,7 @@ const Services = () => {
 
                   <Button 
                     asChild 
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold tracking-tight group"
+                    className="w-full cta-primary group"
                   >
                     <Link to="/services/accounting" className="flex items-center justify-center">
                       Explore Management
@@ -203,7 +208,10 @@ const Services = () => {
       </section>
 
       {/* Why Choose Our Integrated Approach */}
-      <section className="py-20 bg-gray-50">
+      <section
+        ref={advantageRef}
+        className="py-20 bg-gray-50 opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
@@ -216,8 +224,8 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                <Handshake className="w-8 h-8 text-blue-600" aria-label="One-stop solutions icon" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                <Handshake className="w-8 h-8 text-primary" aria-label="One-stop solutions icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 One-Stop Solutions
@@ -228,8 +236,8 @@ const Services = () => {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-                <Zap className="w-8 h-8 text-orange-500" aria-label="Seamless integration icon" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                <Zap className="w-8 h-8 text-primary" aria-label="Seamless integration icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Seamless Integration
@@ -240,8 +248,8 @@ const Services = () => {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                <Flag className="w-8 h-8 text-green-600" aria-label="Canadian expertise icon" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                <Flag className="w-8 h-8 text-primary" aria-label="Canadian expertise icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Canadian Expertise
@@ -252,8 +260,8 @@ const Services = () => {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
-                <Shield className="w-8 h-8 text-purple-600" aria-label="Proven results icon" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                <Shield className="w-8 h-8 text-primary" aria-label="Proven results icon" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Proven Results
@@ -267,14 +275,17 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section
+        ref={ctaRef}
+        className="py-20 bg-primary opacity-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">
                 Ready to Get Started?
               </h2>
-              <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
                 Let's discuss your specific needs and create a customized solution that drives your business forward.
               </p>
             </div>
@@ -282,7 +293,7 @@ const Services = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-white text-blue-600 hover:bg-gray-50 font-semibold tracking-tight"
+                className="cta-primary bg-white text-primary hover:bg-gray-50"
               >
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
@@ -290,7 +301,7 @@ const Services = () => {
                 asChild 
                 variant="outline" 
                 size="lg" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold tracking-tight"
+                className="border-white text-white hover:bg-white hover:text-primary font-semibold tracking-tight"
               >
                 <Link to="/about">Learn About Us</Link>
               </Button>

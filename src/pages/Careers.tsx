@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Flag, Handshake, Heart, Home, Sparkles, Umbrella } from "lucide-react";
+import { Rocket, Flag, Handshake, Heart, Home, Sparkles, Umbrella, Award } from "lucide-react";
 
 const Careers = () => {
   const openPositions = [
@@ -31,37 +31,31 @@ const Careers = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="hero-fullwidth"
+        style={{ backgroundImage: `url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop)` }}
+      >
+        <div className="hero-overlay"></div>
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Content */}
-            <div className="space-y-8">
+            <div className="hero-content space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-                  Join the <span className="text-blue-600">Zaytrix</span> Team
+                <h1 className="leading-tight">
+                  Join the <span className="text-primary-100">Zaytrix</span> Team
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-white/90 leading-relaxed">
                   Build your career with Canada's leading multidisciplinary technology and business services company.
                 </p>
               </div>
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight"
+                className="cta-primary bg-white text-primary hover:bg-gray-50"
               >
                 <Link to="#open-positions">View Open Positions</Link>
               </Button>
             </div>
-
-            {/* Right: Image */}
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop" 
-                alt="Team collaboration and career growth" 
-                className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-orange-500/20 rounded-lg"></div>
-            </div>
+            <div></div>
           </div>
         </div>
       </section>
@@ -81,7 +75,7 @@ const Careers = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <GraduationCap size={48} className="text-blue-600 mb-6" aria-label="Innovation Focus" />
+                <Rocket size={48} className="text-primary-800 mb-6" aria-label="Innovation Focus" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Innovation Focus
                 </h3>
@@ -93,7 +87,7 @@ const Careers = () => {
 
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <Sparkles size={48} className="text-orange-500 mb-6" aria-label="Career Growth" />
+                <Sparkles size={48} className="text-primary-800 mb-6" aria-label="Career Growth" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Career Growth
                 </h3>
@@ -105,7 +99,7 @@ const Careers = () => {
 
             <Card className="border-gray-200 text-center">
               <CardContent className="p-8 flex flex-col items-center">
-                <Heart size={48} className="text-green-600 mb-6" aria-label="Work-Life Balance" />
+                <Heart size={48} className="text-primary-800 mb-6" aria-label="Work-Life Balance" />
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
                   Work-Life Balance
                 </h3>
@@ -118,59 +112,66 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Company Culture */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-                alt="Collaborative work environment" 
-                className="rounded-lg shadow-xl w-full h-[400px] object-cover"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+      {/* Our Culture - Updated with reduced height and improved spacing */}
+      <section className="py-20">
+        <div 
+          className="brand-overlay min-h-[500px] flex items-center"
+          style={{ 
+            backgroundImage: `url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="container-custom py-10 sm:py-20"> {/* Add inner vertical padding */}
+            <div className="text-center space-y-10 sm:space-y-12 text-white max-w-4xl mx-auto">
+              <div className="space-y-4 sm:space-y-6">
+                <h2>
                   Our Culture
                 </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-white/90 leading-relaxed">
                   At Zaytrix, we foster a collaborative environment where innovation thrives and every team member contributes to our shared success.
                 </p>
               </div>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <Handshake size={24} className="text-blue-600 flex-shrink-0 mt-1" aria-label="Collaborative Excellence" />
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-y-3 md:gap-y-12 gap-x-6 md:gap-x-12 px-3 sm:px-0">
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Handshake className="w-6 h-6 text-white" aria-label="Collaborative Excellence" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold text-white">
                       Collaborative Excellence
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90">
                       Cross-functional teams working together to deliver exceptional results for our clients.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <GraduationCap size={24} className="text-orange-500 flex-shrink-0 mt-1" aria-label="Continuous Learning" />
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Award className="w-6 h-6 text-white" aria-label="Continuous Learning" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold text-white">
                       Continuous Learning
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90">
                       Investment in professional development and staying current with industry trends and technologies.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <Flag size={24} className="text-green-600 flex-shrink-0 mt-1" aria-label="Canadian Values" />
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+                
+                <div className="space-y-6">
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
+                    <Flag className="w-6 h-6 text-white" aria-label="Canadian Values" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold text-white">
                       Canadian Values
                     </h3>
-                    <p className="text-gray-600 mt-1">
+                    <p className="text-white/90">
                       Embracing diversity, inclusivity, and the collaborative spirit that defines Canadian business culture.
                     </p>
                   </div>
@@ -225,7 +226,7 @@ const Careers = () => {
                     <div className="flex justify-end">
                       <Button 
                         asChild 
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold tracking-tight"
+                        className="bg-primary-800 text-white hover:bg-primary-900 font-semibold tracking-tight"
                       >
                         <Link to="/contact">Apply Now</Link>
                       </Button>
@@ -246,7 +247,7 @@ const Careers = () => {
               </p>
               <Button 
                 asChild 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold tracking-tight"
+                className="bg-primary-800 text-white hover:bg-primary-900 font-semibold tracking-tight"
               >
                 <Link to="/contact">Send Your Resume</Link>
               </Button>
@@ -265,7 +266,7 @@ const Careers = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
-              <Umbrella size={48} className="text-blue-600 mx-auto" aria-label="Health & Wellness" />
+              <Umbrella size={48} className="text-primary-800 mx-auto" aria-label="Health & Wellness" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Health & Wellness
               </h3>
@@ -274,7 +275,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <Home size={48} className="text-orange-500 mx-auto" aria-label="Flexible Work" />
+              <Home size={48} className="text-primary-800 mx-auto" aria-label="Flexible Work" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Flexible Work
               </h3>
@@ -283,7 +284,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <GraduationCap size={48} className="text-green-600 mx-auto" aria-label="Professional Development" />
+              <Award size={48} className="text-primary-800 mx-auto" aria-label="Professional Development" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Professional Development
               </h3>
@@ -292,7 +293,7 @@ const Careers = () => {
               </p>
             </div>
             <div className="text-center space-y-4">
-              <Heart size={48} className="text-purple-600 mx-auto" aria-label="Competitive Package" />
+              <Heart size={48} className="text-primary-800 mx-auto" aria-label="Competitive Package" />
               <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
                 Competitive Package
               </h3>
@@ -305,14 +306,14 @@ const Careers = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">
                 Ready to Start Your Career with Zaytrix?
               </h2>
-              <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
                 Join our team and be part of Canada's leading technology and business services company.
               </p>
             </div>
@@ -320,7 +321,7 @@ const Careers = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-white text-blue-600 hover:bg-gray-50 font-semibold tracking-tight"
+                className="cta-primary bg-white text-primary hover:bg-gray-50"
               >
                 <Link to="/contact">Apply Today</Link>
               </Button>
@@ -328,7 +329,7 @@ const Careers = () => {
                 asChild 
                 variant="outline" 
                 size="lg" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold tracking-tight"
+                className="border-white text-white hover:bg-white hover:text-primary font-semibold tracking-tight"
               >
                 <Link to="/about">Learn About Us</Link>
               </Button>

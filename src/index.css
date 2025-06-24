@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,16 +15,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Zaytrix Brand Blue - Primary Color System */
-    --primary: 217.2 91.2% 59.8%; /* Zaytrix Blue */
+    /* Zaytrix Brand Blue - Primary Color System - Updated to use deeper blue */
+    --primary: 217.2 91.2% 29.8%; /* Deep Zaytrix Blue - same as footer */
     --primary-foreground: 0 0% 100%;
 
-    /* Blue Variations for Depth */
+    /* Blue Variations for Depth - Updated to deeper shades */
     --primary-50: 217 100% 97%;
     --primary-100: 217 91% 92%;
-    --primary-600: 217 91% 50%;
-    --primary-700: 217 91% 45%;
-    --primary-800: 217 91% 40%;
+    --primary-600: 217 91% 25%;
+    --primary-700: 217 91% 20%;
+    --primary-800: 217 91% 15%; /* Deep blue for navbar/footer */
+    --primary-900: 217 91% 10%;
 
     /* Grayscale Support Colors Only */
     --secondary: 210 40% 96.1%;
@@ -42,18 +42,18 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 217.2 91.2% 59.8%;
+    --ring: 217.2 91.2% 29.8%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 217.2 91.2% 59.8%;
+    --sidebar-primary: 217.2 91.2% 29.8%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2 91.2% 29.8%;
   }
 
   .dark {
@@ -63,7 +63,7 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 217.2 91.2% 29.8%;
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -75,15 +75,15 @@
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 217.2 91.2% 59.8%;
+    --ring: 217.2 91.2% 29.8%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 217.2 91.2% 59.8%;
+    --sidebar-primary: 217.2 91.2% 29.8%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2 91.2% 29.8%;
   }
 }
 
@@ -125,6 +125,58 @@
     @apply absolute -top-10 left-6 z-50 bg-primary text-primary-foreground px-4 py-2 rounded-md;
     @apply focus:top-6 transition-all duration-200;
   }
+
+  /* Scroll reveal animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer components {
@@ -142,13 +194,40 @@
     text-align: justify;
   }
   
-  /* CTA Button Consistency */
+  /* CTA Button Consistency - Updated to use deep blue */
   .cta-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
+    @apply bg-primary-800 text-primary-foreground hover:bg-primary-900 px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
   }
 
   .cta-outline {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
+    @apply border-2 border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-primary-foreground px-6 py-3 rounded-md font-semibold tracking-tight transition-colors;
+  }
+
+  /* Hero Section with Full-Width Background */
+  .hero-fullwidth {
+    @apply relative bg-cover bg-center bg-no-repeat min-h-[600px] flex items-center;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-br from-primary-900/80 to-primary-700/60;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-white;
+  }
+
+  /* Brand Blue Gradient Overlay */
+  .brand-overlay {
+    @apply relative;
+  }
+
+  .brand-overlay::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary-800/90 to-primary-700/80 rounded-lg;
+  }
+
+  .brand-overlay > * {
+    @apply relative z-10;
   }
 
   /* Section Spacing */
@@ -159,4 +238,65 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Modern hover effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:translate-y-[-4px];
+  }
+
+  .hover-glow {
+    @apply transition-shadow duration-300 hover:shadow-xl hover:shadow-primary/20;
+  }
+
+  /* Page transition effects */
+  .page-enter {
+    @apply opacity-0 transform translate-y-4;
+  }
+
+  .page-enter-active {
+    @apply opacity-100 transform translate-y-0 transition-all duration-300 ease-out;
+  }
+
+  .page-exit {
+    @apply opacity-100 transform translate-y-0;
+  }
+
+  .page-exit-active {
+    @apply opacity-0 transform translate-y-4 transition-all duration-300 ease-in;
+  }
+}
+
+/* Animation for in-view fade-in via useInViewAnimation hook */
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+
+/* Enhance interactive elements: */
+.cta-primary, .cta-outline, button, [role="button"] {
+  transition: transform 0.12s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.22s;
+}
+.cta-primary:hover, .cta-primary:active,
+.cta-outline:hover, .cta-outline:active,
+button:hover, button:active, [role="button"]:hover, [role="button"]:active {
+  transform: scale(1.04);
+  box-shadow: 0 2px 10px 0 rgba(30,40,120,.07);
+}
+/* Optional: Add underline-animate for links if you want */
+.story-link, a.cta-primary, a.cta-outline, a.underline-animate {
+  transition: color 0.16s;
+  position: relative;
+}
+.story-link:after, a.underline-animate:after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+.story-link:hover:after, a.underline-animate:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

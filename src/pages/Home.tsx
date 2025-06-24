@@ -43,7 +43,7 @@ const Home = () => {
             href: "/contact"
           }}
           image={{
-            src: "/homeheroimage.png",
+            src: "/homeheroimage.webp",
             alt: "Modern business technology workspace showcasing Zaytrix's innovative solutions"
           }}
         />

@@ -15,122 +15,134 @@ const DesignDevelopment = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/UIUX.webp"
                   alt="UI/UX Design"
-                  className="w-16 h-16 object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  UI/UX Design
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  User-centered design that creates intuitive and engaging digital experiences.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    UI/UX Design
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    User-centered design that creates intuitive and engaging digital experiences.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/CusDev.webp"
                   alt="Custom Development"
-                  className="w-16 h-16 object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  Custom Development
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Tailored software solutions built with modern frameworks and best practices.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    Custom Development
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Tailored software solutions built with modern frameworks and best practices.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/SEO.webp"
                   alt="SEO Optimization"
-                  className="w-16 h-16 object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  SEO Optimization
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Strategic optimization to improve your digital presence and search rankings.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    SEO Optimization
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Strategic optimization to improve your digital presence and search rankings.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/ResDes.webp"
-                  alt="Cloud Solutions"
-                  className="w-16 h-16 object-cover rounded-full"
+                  alt="Responsive Design"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  Responsive Design
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Mobile-first approach ensuring perfect performance across all devices.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    Responsive Design
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Mobile-first approach ensuring perfect performance across all devices.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/WebApp.webp"
                   alt="Web Applications"
-                  className="w-16 h-16 object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  Web Applications
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Scalable web applications that grow with your business needs.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    Web Applications
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Scalable web applications that grow with your business needs.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="relative h-16 flex items-center justify-center mx-auto">
+          <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 flex flex-col h-full">
+            <CardContent className="p-0 flex flex-col h-full">
+              <div className="relative w-full h-32">
                 <img
                   src="/Sec1st.webp"
                   alt="Security First"
-                  className="w-16 h-16 object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
-                  Security First
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Built-in security measures to protect your applications and data.
-                </p>
+              <div className="p-8 text-center space-y-6 flex flex-col flex-1 justify-center">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
+                    Security First
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Built-in security measures to protect your applications and data.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>

@@ -29,7 +29,7 @@ const About = () => {
           subtitle="Innovation"
           description="Zaytrix is a Canadian company dedicated to delivering exceptional results across telecommunications, digital technology, and management services."
           image={{
-            src: "/Image1.webp",
+            src: "/Image4.webp",
             alt: "Professional business environment showcasing Zaytrix's commitment to excellence"
           }}
         />

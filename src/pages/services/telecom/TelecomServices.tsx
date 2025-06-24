@@ -1,6 +1,4 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Wifi, Building, Shield } from "lucide-react";
 
 const TelecomServices = () => {
   return (
@@ -17,11 +15,18 @@ const TelecomServices = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-8">
+            {/* VoIP Solutions */}
             <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-1 lg:col-start-1">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-primary-800" />
+                  <div className="relative h-20 w-20 overflow-hidden rounded-lg flex-shrink-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=400&auto=format&fit=crop"
+                      alt="VoIP Solutions"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-blue-600/20"></div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 tracking-tight">
                     VoIP Solutions
@@ -39,11 +44,18 @@ const TelecomServices = () => {
               </CardContent>
             </Card>
 
+            {/* Network Infrastructure */}
             <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-1 lg:col-start-2">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Wifi className="w-6 h-6 text-primary-800" />
+                  <div className="relative h-20 w-20 overflow-hidden rounded-lg flex-shrink-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1465101178521-c1a9136a0b16?q=80&w=400&auto=format&fit=crop"
+                      alt="Network Infrastructure"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-orange-500/20"></div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 tracking-tight">
                     Network Infrastructure
@@ -61,11 +73,18 @@ const TelecomServices = () => {
               </CardContent>
             </Card>
 
+            {/* Unified Communications */}
             <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-2 lg:col-start-1">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Building className="w-6 h-6 text-primary-800" />
+                  <div className="relative h-20 w-20 overflow-hidden rounded-lg flex-shrink-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=400&auto=format&fit=crop"
+                      alt="Unified Communications"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-green-600/20"></div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 tracking-tight">
                     Unified Communications
@@ -83,11 +102,18 @@ const TelecomServices = () => {
               </CardContent>
             </Card>
 
+            {/* Network Security */}
             <Card className="hover:shadow-xl transition-all duration-300 border-gray-200 h-full lg:row-start-2 lg:col-start-2">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary-800" />
+                  <div className="relative h-20 w-20 overflow-hidden rounded-lg flex-shrink-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=400&auto=format&fit=crop"
+                      alt="Network Security"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-purple-600/20"></div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 tracking-tight">
                     Network Security

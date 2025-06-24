@@ -1,0 +1,27 @@
+.hero-animated-gradient {
+  background: linear-gradient(100deg, #181e2a 0%, #20264a 40%, #0ed1f8 100%);
+  position: relative;
+  overflow: hidden;
+}
+@keyframes animate-gradient-x {
+  0%, 100% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: animate-gradient-x 7s ease-in-out infinite;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fadein {
+  animation: fadein 1.2s cubic-bezier(.23,1.02,.58,.99) both;
+}
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite;
+}

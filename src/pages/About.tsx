@@ -51,7 +51,7 @@ const About = () => {
   <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
     <div className="relative h-48 overflow-hidden rounded-t-lg">
       <img
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop"
+        src="/mission.webp"
         alt="Mission"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
@@ -74,7 +74,7 @@ const About = () => {
   <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
     <div className="relative h-48 overflow-hidden rounded-t-lg">
       <img
-        src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=800&auto=format&fit=crop"
+        src="/vision.webp"
         alt="Vision"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
@@ -97,7 +97,7 @@ const About = () => {
   <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
     <div className="relative h-48 overflow-hidden rounded-t-lg">
       <img
-        src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=800&auto=format&fit=crop"
+        src="/values.webp"
         alt="Values"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         loading="lazy"

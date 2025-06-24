@@ -39,7 +39,7 @@ const DesignDevelopment = () => {
             <CardContent className="p-8 text-center space-y-6">
               <div className="relative h-16 flex items-center justify-center mx-auto">
                 <img
-                  src="/CustomDev.webp"
+                  src="/CusDev.webp"
                   alt="Custom Development"
                   className="w-16 h-16 object-cover rounded-full"
                 />
@@ -79,7 +79,7 @@ const DesignDevelopment = () => {
             <CardContent className="p-8 text-center space-y-6">
               <div className="relative h-16 flex items-center justify-center mx-auto">
                 <img
-                  src="/CloudSolutions.webp"
+                  src="/ResDes.webp"
                   alt="Cloud Solutions"
                   className="w-16 h-16 object-cover rounded-full"
                 />
@@ -99,7 +99,7 @@ const DesignDevelopment = () => {
             <CardContent className="p-8 text-center space-y-6">
               <div className="relative h-16 flex items-center justify-center mx-auto">
                 <img
-                  src="/ITConsulting.webp"
+                  src="/WebApp.webp"
                   alt="Web Applications"
                   className="w-16 h-16 object-cover rounded-full"
                 />
@@ -119,7 +119,7 @@ const DesignDevelopment = () => {
             <CardContent className="p-8 text-center space-y-6">
               <div className="relative h-16 flex items-center justify-center mx-auto">
                 <img
-                  src="/AppModernization.webp"
+                  src="/Sec1st.webp"
                   alt="Security First"
                   className="w-16 h-16 object-cover rounded-full"
                 />

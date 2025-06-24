@@ -19,7 +19,7 @@ const Services = () => {
         image={{
           src: "/Image9.webp",
         }}
-      >
+      />
         <div className="hero-overlay"></div>
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

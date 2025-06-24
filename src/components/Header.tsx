@@ -39,6 +39,14 @@ const Header = () => {
             >
               Home
             </Link>
+            <Link 
+              to="/about" 
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                isActive('/about') ? 'text-primary-900' : ''
+              }`}
+            >
+              About
+            </Link>
             <div 
               className="relative"
               onMouseEnter={() => setIsServicesOpen(true)}
@@ -128,6 +136,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                to="/about" 
+                className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
+                  isActive('/about') ? 'text-primary-900' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
               </Link>
               <div className="relative">
                 <button

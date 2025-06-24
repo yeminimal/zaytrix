@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Palette, Code, Search, Smartphone, Globe, Shield } from "lucide-react";
 
@@ -18,8 +17,12 @@ const DesignDevelopment = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Palette className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/UIUX.webp"
+                  alt="UI/UX Design"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -34,8 +37,12 @@ const DesignDevelopment = () => {
 
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Code className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/CustomDev.webp"
+                  alt="Custom Development"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -50,8 +57,12 @@ const DesignDevelopment = () => {
 
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Search className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/SEO.webp"
+                  alt="SEO Optimization"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -66,8 +77,12 @@ const DesignDevelopment = () => {
 
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Smartphone className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/CloudSolutions.webp"
+                  alt="Cloud Solutions"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -82,8 +97,12 @@ const DesignDevelopment = () => {
 
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Globe className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/ITConsulting.webp"
+                  alt="Web Applications"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">
@@ -98,8 +117,12 @@ const DesignDevelopment = () => {
 
           <Card className="hover:shadow-lg transition-all duration-300 border-gray-200">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
-                <Shield className="w-8 h-8 text-primary-800" />
+              <div className="relative h-16 flex items-center justify-center mx-auto">
+                <img
+                  src="/AppModernization.webp"
+                  alt="Security First"
+                  className="w-16 h-16 object-cover rounded-full"
+                />
               </div>
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-gray-900 tracking-tight">

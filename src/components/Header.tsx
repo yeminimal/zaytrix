@@ -28,9 +28,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${
-                isActive('/') ? 'text-primary-900' : ''
-              }`}
+              className={`text-primary-800 hover:text-primary-900 text-sm font-medium tracking-tight transition-colors ${isActive('/') ? 'text-primary-900' : ''}`}
             >
               Home
             </Link>
@@ -49,9 +47,8 @@ const Header = () => {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className={`text-primary-800 hover:text-primary-900 flex items-center text-sm font-medium tracking-tight transition-colors ${
-                location.pathname.startsWith('/services') ? 'text-primary-900' : ''
-              }`}>
+              <button className={`text-primary-800 hover:text-primary-900 flex items-center text-sm font-medium tracking-tight transition-colors ${location.pathname.startsWith('/services') ? 'text-primary-900' : ''}`}
+               >
                 Services
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>

@@ -43,7 +43,7 @@ const Home = () => {
             href: "/contact"
           }}
           image={{
-            src: "http://googleusercontent.com/image_generation_content/61",
+            src: "https://github.com/yeminimal/zaytrix/blob/558e11cc99462e1ad1de02a468c01f27d175060d/public/homeheroimage.png",
             alt: "Modern business technology workspace showcasing Zaytrix's innovative solutions"
           }}
         />

@@ -20,7 +20,7 @@ const TelecomServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=800&auto=format&fit=crop"
+                    src="/VoIP.webp"
                     alt="VoIP Solutions"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -49,7 +49,7 @@ const TelecomServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1465101178521-c1a9136a0b16?q=80&w=800&auto=format&fit=crop"
+                    src="/Network.webp"
                     alt="Network Infrastructure"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -78,7 +78,7 @@ const TelecomServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop"
+                    src="/UniComn.webp"
                     alt="Unified Communications"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
@@ -107,7 +107,7 @@ const TelecomServices = () => {
               <CardContent className="p-0">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=800&auto=format&fit=crop"
+                    src="/NetSec.webp"
                     alt="Network Security"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

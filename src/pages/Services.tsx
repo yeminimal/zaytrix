@@ -17,7 +17,7 @@ const Services = () => {
         ref={heroRef}
         className="hero-fullwidth opacity-0 relative bg-cover bg-center"
         style={{
-        backgroundImage: "url('/Image9.webp')",
+        backgroundImage: "/Image9.webp",
        }}
       >
         <div className="hero-overlay"></div>

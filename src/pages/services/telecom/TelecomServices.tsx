@@ -58,20 +58,18 @@ const TelecomServices = () => {
                 </div>
                 <div className="p-8 space-y-6">
                   <h3 className="text-xl font-bold text-gray-900 tracking-tight">
-                    Network Infrastructure
+                    Network Operations and Management Services
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Design and implementation of robust network infrastructure tailored to your business requirements.
+                    Network operation and management tailored to your business requirements.
                   </p>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li>• Custom network design</li>
-                    <li>• Fiber optic solutions</li>
-                    <li>• Wireless networks</li>
-                    <li>• Network optimization</li>
+                    <li>• Fiber deployment and maintenance services</li>
                     <li>• RF Planning and Optimization</li>
-                    <li>• Network Health Optimization</li>
                     <li>• Performance Benchmarking</li>
                     <li>• Drive Test</li>
+                    <li>• Safety code 6</li>
                     <li>• Logfile Collection & Processing</li>
                     <li>• Site Maintenance</li>
                     <li>• IoT Solutions</li>

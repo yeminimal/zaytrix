@@ -17,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/3e7c2dfe-fc30-4af0-8d06-e26ac3d7ec0c.png" 
+              src="/lovable-uploads/ZaytrixWebsiteLogo.png" 
               alt="Zaytrix Logo" 
               className="h-12 w-auto"
             />

@@ -79,7 +79,7 @@ const Services = () => {
                     <div className="space-y-3">
                       <h4 className="font-semibold text-gray-900">Key Services:</h4>
                       <ul className="space-y-2 text-sm text-gray-600">
-                        <li>• Network Infrastructure Design</li>
+                        <li>• Network Operations and Management Services</li>
                         <li>• Unified Communications</li>
                         <li>• VoIP Solutions</li>
                         <li>• Network Security</li>

@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/lovable-uploads/3e7c2dfe-fc30-4af0-8d06-e26ac3d7ec0c.png" 
+              src="/lovable-uploads/ZaytrixWebsiteLogo.png" 
               alt="Zaytrix Logo" 
               className="h-8 w-auto mb-4"
             />

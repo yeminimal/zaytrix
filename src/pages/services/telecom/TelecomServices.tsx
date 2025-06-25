@@ -68,6 +68,16 @@ const TelecomServices = () => {
                     <li>• Fiber optic solutions</li>
                     <li>• Wireless networks</li>
                     <li>• Network optimization</li>
+                    <li>• RF Planning and Optimization</li>
+                    <li>• Network Health Optimization</li>
+                    <li>• Performance Benchmarking</li>
+                    <li>• Drive Test</li>
+                    <li>• Logfile Collection & Processing</li>
+                    <li>• Site Maintenance</li>
+                    <li>• IoT Solutions</li>
+                    <li>• Fibre Optics Services</li>
+                    <li>• Private Network Deployment</li>
+                    <li>• Telecom Project Management</li>
                   </ul>
                 </div>
               </CardContent>

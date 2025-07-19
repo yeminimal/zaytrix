@@ -5,9 +5,9 @@ import { ChevronRight, Handshake, Zap, Flag, Shield } from "lucide-react";
 import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 import PageHead from "@/components/PageHead";
 import HeroSection from "@/components/HeroSection";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const Services = () => {
-  const heroRef = useInViewAnimation();
   const gridRef = useInViewAnimation();
   const advantageRef = useInViewAnimation();
   const ctaRef = useInViewAnimation();
@@ -56,9 +56,9 @@ const Services = () => {
               <Card className="group hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
                 <CardContent className="p-0">
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
-                    <img 
-                      src="/Telecomms_1.webp" 
-                      alt="Professional telecommunications team" 
+                    <OptimizedImage
+                      src="/Telecomms_1.webp"
+                      alt="Professional telecommunications team"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       width="800"
@@ -103,9 +103,9 @@ const Services = () => {
               <Card className="group hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
                 <CardContent className="p-0">
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
-                    <img 
-                      src="/digitechs_1.webp" 
-                      alt="Digital technology team collaboration" 
+                    <OptimizedImage
+                      src="/digitechs_1.webp"
+                      alt="Digital technology team collaboration"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       width="800"
@@ -150,9 +150,9 @@ const Services = () => {
               <Card className="group hover:shadow-xl transition-all duration-300 border-gray-200 h-full">
                 <CardContent className="p-0">
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
-                    <img 
-                      src="/mnmgmts_1.webp" 
-                      alt="Professional management team" 
+                    <OptimizedImage
+                      src="/mnmgmts_1.webp"
+                      alt="Professional management team"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       width="800"

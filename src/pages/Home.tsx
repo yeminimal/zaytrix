@@ -1,18 +1,26 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Quote, CheckCircle, MapPin, Handshake } from "lucide-react";
+import { ChevronRight, Quote } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
-import ServiceCard from "@/components/ServiceCard";
 import PageHead from "@/components/PageHead";
-import { Mail, Phone, Radio, Monitor, Calculator } from "lucide-react";
+import ServicesSection from "@/components/home/ServicesSection";
+import WhyZaytrixSection from "@/components/home/WhyZaytrixSection";
 import { useInViewAnimation } from "@/hooks/useInViewAnimation";
+import { useImagePreloader } from "@/hooks/useImagePreloader";
 
 const Home = () => {
-  const servicesRef = useInViewAnimation();
-  const whyRef = useInViewAnimation();
   const testimonialsRef = useInViewAnimation();
   const ctaRef = useInViewAnimation();
+
+  // Preload critical images for faster loading
+  useImagePreloader([
+    { src: '/homeheroimage.webp', priority: true },
+    { src: 'https://images.unsplash.com/photo-1518770660439-4636190af475', priority: true },
+    { src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6', priority: false },
+    { src: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7', priority: false }
+  ]);
 
   return (
     <>
@@ -51,168 +59,10 @@ const Home = () => {
         {/* Main Content */}
         <main id="main-content">
           {/* Services Overview */}
-          <section
-            ref={servicesRef}
-            className="section-padding bg-white opacity-0"
-          >
-            <div className="container-custom">
-              <div className="text-center space-y-4 mb-16">
-                <h2 className="text-gray-900">
-                  Our Core Services
-                </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                  We provide end-to-end solutions across three key areas to support your business growth and operational excellence.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-  {/* Telecommunications */}
-  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
-    <div className="relative h-48 overflow-hidden rounded-t-lg">
-      <img 
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" 
-        alt="Telecommunications infrastructure" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        loading="lazy"
-        width="800"
-        height="400"
-      />
-      <div className="absolute inset-0 bg-blue-600/20"></div>
-    </div>
-    <div className="p-8 space-y-3">
-      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
-        Telecommunications
-      </h3>
-      <p className="text-gray-600 leading-relaxed">
-        Advanced telecommunications infrastructure and solutions to keep your business connected and competitive.
-      </p>
-    </div>
-  </div>
-
-  {/* Digital Technology */}
-  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
-    <div className="relative h-48 overflow-hidden rounded-t-lg">
-      <img 
-        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop" 
-        alt="Digital technology solutions" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        loading="lazy"
-        width="800"
-        height="400"
-      />
-      <div className="absolute inset-0 bg-orange-500/20"></div>
-    </div>
-    <div className="p-8 space-y-3">
-      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
-        Digital Technology
-      </h3>
-      <p className="text-gray-600 leading-relaxed">
-        Cutting-edge digital solutions and technology services to transform your business operations and customer experience.
-      </p>
-    </div>
-  </div>
-
-  {/* Management */}
-  <div className="bg-white rounded-lg shadow group transition-all duration-300 border-gray-200 h-full">
-    <div className="relative h-48 overflow-hidden rounded-t-lg">
-      <img 
-        src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" 
-        alt="Professional management services" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        loading="lazy"
-        width="800"
-        height="400"
-      />
-      <div className="absolute inset-0 bg-green-600/20"></div>
-    </div>
-    <div className="p-8 space-y-3">
-      <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
-        Management
-      </h3>
-      <p className="text-gray-600 leading-relaxed">
-        Professional accounting services and financial management solutions to ensure compliance and growth.
-      </p>
-    </div>
-  </div>
-</div>
-            </div>
-          </section>
+          <ServicesSection />
 
           {/* Why Zaytrix Section */}
-          <section
-            ref={whyRef}
-            className="section-padding opacity-0"
-          >
-            <div 
-              className="brand-overlay min-h-[800px] flex items-center"
-              style={{ 
-                backgroundImage: `url(https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop)`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <div className="container-custom py-10 sm:py-20">
-                <div className="text-center space-y-10 sm:space-y-12 text-white max-w-4xl mx-auto">
-                  <div className="space-y-4 sm:space-y-6">
-                    <h2>
-                      Why Choose Zaytrix?
-                    </h2>
-                    <p className="text-lg text-white/90 leading-relaxed">
-                      As a trusted Canadian company, we combine technical expertise with deep understanding of local business needs.
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-y-3 md:gap-y-12 gap-x-6 md:gap-x-12 px-3 sm:px-0">
-                    <div className="space-y-6">
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
-                        <CheckCircle className="w-6 h-6 text-white" aria-label="Expertise icon" />
-                      </div>
-                      <div className="space-y-3">
-                        <h3 className="text-lg font-semibold text-white">
-                          Multidisciplinary Expertise
-                        </h3>
-                        <p className="text-white/90">
-                          Comprehensive solutions across telecommunications, technology, and accounting under one trusted roof.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-6">
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
-                        <MapPin className="w-6 h-6 text-white" aria-label="Canadian location icon" />
-                      </div>
-                      <div className="space-y-3">
-                        <h3 className="text-lg font-semibold text-white">
-                          Canadian Focus
-                        </h3>
-                        <p className="text-white/90">
-                          Deep understanding of Canadian regulations, business practices, and market requirements.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-6">
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto">
-                        <Handshake className="w-6 h-6 text-white" aria-label="Trust and innovation icon" />
-                      </div>
-                      <div className="space-y-3">
-                        <h3 className="text-lg font-semibold text-white">
-                          Innovation & Trust
-                        </h3>
-                        <p className="text-white/90">
-                          Cutting-edge solutions delivered with the reliability and trust your business deserves.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Link to="/about" className="cta-primary bg-white text-primary hover:bg-gray-50 inline-block">
-                    Learn About Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
+          <WhyZaytrixSection />
 
           {/* Client Testimonials */}
           <section

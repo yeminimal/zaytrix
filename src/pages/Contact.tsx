@@ -254,33 +254,84 @@ const Contact = () => {
                 </h2>
               </div>
               
-              <Card className="border-gray-200 max-w-2xl mx-auto">
-                <CardContent className="p-8">
-                  <div className="space-y-6">
-                    <div className="text-center space-y-2">
-                      <h3 className="text-xl font-semibold text-gray-900">
-                        Nigeria Office
-                      </h3>
-                      <p className="text-lg font-medium text-primary">
-                        Surge Network Nigeria Limited
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-4 justify-center">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-primary" />
-                      </div>
-                      <div className="text-center">
-                        <p className="text-gray-600 leading-relaxed">
-                          Plot 12 Muyi Adekola Avenue<br />
-                          Adegbose Phase 2 Estate<br />
-                          Ikorodu, Lagos
+              <div className="max-w-4xl mx-auto">
+                <Card className="border-gray-200">
+                  <CardContent className="p-8">
+                    <div className="space-y-8">
+                      <div className="text-center space-y-2">
+                        <h3 className="text-xl font-semibold text-gray-900">
+                          Nigeria Office
+                        </h3>
+                        <p className="text-lg font-medium text-primary">
+                          Surge Network Nigeria Limited
                         </p>
                       </div>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* Location */}
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <MapPin className="w-6 h-6 text-primary" />
+                          </div>
+                          <div className="space-y-1">
+                            <h4 className="font-semibold text-gray-900">Location</h4>
+                            <p className="text-gray-600 leading-relaxed">
+                              Plot 12 Muyi Adekola Avenue<br />
+                              Adegbose Phase 2 Estate<br />
+                              Ikorodu, Lagos
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Phone */}
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Phone className="w-6 h-6 text-primary" />
+                          </div>
+                          <div className="space-y-1">
+                            <h4 className="font-semibold text-gray-900">Phone</h4>
+                            <p className="text-gray-600">
+                              <a href="tel:+2349018128924" className="hover:text-primary transition-colors">
+                                +234 901 812 8924
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Primary Email */}
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Mail className="w-6 h-6 text-primary" />
+                          </div>
+                          <div className="space-y-1">
+                            <h4 className="font-semibold text-gray-900">Primary Email</h4>
+                            <p className="text-gray-600">
+                              <a href="mailto:surgenet20@gmail.com" className="hover:text-primary transition-colors">
+                                surgenet20@gmail.com
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Secondary Email */}
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Mail className="w-6 h-6 text-primary" />
+                          </div>
+                          <div className="space-y-1">
+                            <h4 className="font-semibold text-gray-900">Secondary Email</h4>
+                            <p className="text-gray-600">
+                              <a href="mailto:Joseph.ola@surgenetng.com" className="hover:text-primary transition-colors">
+                                Joseph.ola@surgenetng.com
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </main>

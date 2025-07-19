@@ -7,7 +7,7 @@ const WhyZaytrixSection = () => {
   return (
     <section className="section-padding">
       <div 
-        className="brand-overlay min-h-[800px] flex items-center relative"
+        className="relative min-h-[800px] flex items-center"
       >
         <OptimizedImage
           src="https://images.unsplash.com/photo-1518770660439-4636190af475"

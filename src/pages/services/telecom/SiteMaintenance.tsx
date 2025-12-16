@@ -1,51 +1,35 @@
-import { 
-  Wrench, 
-  Zap, 
-  AlertTriangle, 
-  ClipboardCheck, 
-  Construction, 
-  FileCheck, 
-  Activity,
-  CheckCircle
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const SiteMaintenance = () => {
   const services = [
     {
       title: "Preventive & Corrective Maintenance",
-      description: "Regular inspections, servicing, and repairs to maintain site integrity and network reliability.",
-      icon: Wrench
+      description: "Regular inspections, servicing, and repairs to maintain site integrity and network reliability."
     },
     {
       title: "Power Systems Management",
-      description: "Generator servicing, fueling, battery maintenance, and power supply optimization to ensure uninterrupted network operation.",
-      icon: Zap
+      description: "Generator servicing, fueling, battery maintenance, and power supply optimization to ensure uninterrupted network operation."
     },
     {
       title: "Fault Management & Incident Response",
-      description: "Rapid identification, troubleshooting, and resolution of site and network issues to minimize downtime.",
-      icon: AlertTriangle
+      description: "Rapid identification, troubleshooting, and resolution of site and network issues to minimize downtime."
     },
     {
       title: "Site Audits & Compliance Checks",
-      description: "Comprehensive site inspections, structural rigging assessments, and safety compliance verification.",
-      icon: ClipboardCheck
+      description: "Comprehensive site inspections, structural rigging assessments, and safety compliance verification."
     },
     {
       title: "Rigging & Structural Services",
-      description: "Installation, adjustment, and maintenance of towers, masts, and antenna systems.",
-      icon: Construction
+      description: "Installation, adjustment, and maintenance of towers, masts, and antenna systems."
     },
     {
       title: "SLA-Based Support",
-      description: "Customized service level agreements tailored to client requirements, ensuring predictable and accountable service delivery.",
-      icon: FileCheck
+      description: "Customized service level agreements tailored to client requirements, ensuring predictable and accountable service delivery."
     },
     {
       title: "Network Monitoring & Optimization",
-      description: "Continuous monitoring of network performance, proactive tuning, and reporting to optimize efficiency and coverage.",
-      icon: Activity
+      description: "Continuous monitoring of network performance, proactive tuning, and reporting to optimize efficiency and coverage."
     }
   ];
 
@@ -58,20 +42,29 @@ const SiteMaintenance = () => {
   ];
 
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding bg-background">
       <div className="container-custom">
         <div className="space-y-16">
-          {/* Section Header */}
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3">
-              <Wrench className="w-10 h-10 text-primary-800" />
+          {/* Section Header with Image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
                 Site Maintenance & Managed Services
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Zaytrix delivers comprehensive site maintenance and managed services to ensure your networks — fiber, wireless, private, or public safety — operate reliably, safely, and efficiently.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our approach combines technical expertise, proactive monitoring, and full operational support to maximize uptime, performance, and compliance.
+              </p>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Zaytrix delivers comprehensive site maintenance and managed services to ensure your networks — fiber, wireless, private, or public safety — operate reliably, safely, and efficiently. Our approach combines technical expertise, proactive monitoring, and full operational support to maximize uptime, performance, and compliance.
-            </p>
+            <div>
+              <img 
+                src="/Image5.webp" 
+                alt="Site maintenance and managed services" 
+                className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
+              />
+            </div>
           </div>
 
           {/* Our Managed Services */}
@@ -81,16 +74,11 @@ const SiteMaintenance = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
+                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 h-full">
-                    <div className="space-y-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                        <service.icon className="w-6 h-6 text-primary-800" />
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-foreground">{service.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-                      </div>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-foreground">{service.title}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                     </div>
                   </CardContent>
                 </Card>

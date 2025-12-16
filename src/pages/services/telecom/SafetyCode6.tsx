@@ -1,72 +1,64 @@
-import { 
-  Shield, 
-  Activity, 
-  Radio, 
-  FileText, 
-  Lightbulb, 
-  ClipboardCheck 
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const SafetyCode6 = () => {
   const services = [
     {
       title: "RF Exposure Assessment",
-      description: "Accurate measurement of radiofrequency emissions to ensure compliance with SC6 safety limits.",
-      icon: Activity
+      description: "Accurate measurement of radiofrequency emissions to ensure compliance with SC6 safety limits."
     },
     {
       title: "Spectrum Utilization & Management Reporting",
-      description: "Monitoring and reporting frequency usage to comply with ISED/FCC requirements and optimize network performance.",
-      icon: Radio
+      description: "Monitoring and reporting frequency usage to comply with ISED/FCC requirements and optimize network performance."
     },
     {
       title: "Compliance Documentation",
-      description: "Detailed, regulator-ready reports for ISED, FCC, clients, and auditors.",
-      icon: FileText
+      description: "Detailed, regulator-ready reports for ISED, FCC, clients, and auditors."
     },
     {
       title: "Mitigation Recommendations",
-      description: "Practical solutions to reduce RF exposure or optimize spectrum usage.",
-      icon: Lightbulb
+      description: "Practical solutions to reduce RF exposure or optimize spectrum usage."
     },
     {
       title: "Regulatory Audit Support",
-      description: "Assistance during inspections, project approvals, and ongoing compliance verification.",
-      icon: ClipboardCheck
+      description: "Assistance during inspections, project approvals, and ongoing compliance verification."
     }
   ];
 
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding bg-background">
       <div className="container-custom">
         <div className="space-y-12">
-          {/* Section Header */}
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3">
-              <Shield className="w-10 h-10 text-primary-800" />
+          {/* Section Header with Image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
                 Safety Code 6 (SC6) Compliance & Spectrum Management Reporting
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Zaytrix provides comprehensive RF compliance and spectrum management services to ensure telecom and wireless networks meet Safety Code 6 (SC6) limits and regulatory requirements mandated by ISED (Canada) and FCC (USA).
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our services safeguard the public, employees, and operational assets while enabling smooth project approvals and regulatory audits.
+              </p>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Zaytrix provides comprehensive RF compliance and spectrum management services to ensure telecom and wireless networks meet Safety Code 6 (SC6) limits and regulatory requirements mandated by ISED (Canada) and FCC (USA). Our services safeguard the public, employees, and operational assets while enabling smooth project approvals and regulatory audits.
-            </p>
+            <div>
+              <img 
+                src="/NetSec.webp" 
+                alt="Safety code compliance and spectrum management" 
+                className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
+              />
+            </div>
           </div>
 
           {/* Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
+              <Card key={index} className="border-border hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                      <service.icon className="w-6 h-6 text-primary-800" />
-                    </div>
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-foreground">{service.title}</h4>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-                    </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-foreground">{service.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                   </div>
                 </CardContent>
               </Card>

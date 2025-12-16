@@ -1,71 +1,32 @@
-import { 
-  Cable, 
-  MapPin, 
-  Network, 
-  Construction, 
-  Wrench, 
-  TestTube, 
-  AlertTriangle, 
-  Calendar, 
-  FileText, 
-  Shield,
-  CheckCircle
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const FiberOptic = () => {
   const engineeringDesign = [
     {
       title: "Fiber Route Surveys & Planning",
-      description: "Comprehensive site surveys, route optimization, and network design to maximize efficiency and coverage.",
-      icon: MapPin
+      description: "Comprehensive site surveys, route optimization, and network design to maximize efficiency and coverage."
     },
     {
       title: "Network Architecture & Integration",
-      description: "Designing fiber layouts that integrate seamlessly with wireless, hybrid, and private networks.",
-      icon: Network
+      description: "Designing fiber layouts that integrate seamlessly with wireless, hybrid, and private networks."
     },
     {
       title: "Civil & Site Coordination",
-      description: "Engineering solutions for right-of-way, trenching, and construction coordination to ensure smooth deployment.",
-      icon: Construction
+      description: "Engineering solutions for right-of-way, trenching, and construction coordination to ensure smooth deployment."
     }
   ];
 
   const deploymentTesting = [
-    {
-      title: "Fusion & Mechanical Splicing",
-      description: "Precision splicing and termination for high-performance connectivity.",
-      icon: Cable
-    },
-    {
-      title: "OTDR & Power Meter Testing",
-      description: "Advanced testing to validate fiber integrity, loss, and network performance.",
-      icon: TestTube
-    },
-    {
-      title: "Fault Detection & Restoration",
-      description: "Rapid identification and resolution of network faults to minimize downtime.",
-      icon: AlertTriangle
-    },
-    {
-      title: "Preventive Maintenance",
-      description: "Scheduled inspections, cleaning, and performance verification to ensure long-term reliability.",
-      icon: Calendar
-    }
+    "Fusion & Mechanical Splicing – Precision splicing and termination for high-performance connectivity.",
+    "OTDR & Power Meter Testing – Advanced testing to validate fiber integrity, loss, and network performance.",
+    "Fault Detection & Restoration – Rapid identification and resolution of network faults to minimize downtime.",
+    "Preventive Maintenance – Scheduled inspections, cleaning, and performance verification to ensure long-term reliability."
   ];
 
   const documentationCompliance = [
-    {
-      title: "As-Built Documentation",
-      description: "Accurate, regulator-ready schematics and reports for operational and audit purposes.",
-      icon: FileText
-    },
-    {
-      title: "Regulatory Compliance",
-      description: "Ensuring adherence to ISED, FCC, and Canadian standards for fiber deployment, safety, and operational reliability.",
-      icon: Shield
-    }
+    "As-Built Documentation – Accurate, regulator-ready schematics and reports for operational and audit purposes.",
+    "Regulatory Compliance – Ensuring adherence to ISED, FCC, and Canadian standards for fiber deployment, safety, and operational reliability."
   ];
 
   const whyChooseUs = [
@@ -77,17 +38,29 @@ const FiberOptic = () => {
   ];
 
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding bg-background">
       <div className="container-custom">
         <div className="space-y-16">
-          {/* Section Header */}
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-              Fiber Optic Engineering, Deployment & Maintenance
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Zaytrix delivers end-to-end fiber optic engineering, deployment, and maintenance services for Canadian operators, enterprises, and public-sector clients, from FTTH to backbone networks. Our integrated approach ensures networks are robust, high-performing, scalable, and fully compliant with Canadian and North American standards.
-            </p>
+          {/* Section Header with Image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+                Fiber Optic Engineering, Deployment & Maintenance
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Zaytrix delivers end-to-end fiber optic engineering, deployment, and maintenance services for Canadian operators, enterprises, and public-sector clients, from FTTH to backbone networks.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our integrated approach ensures networks are robust, high-performing, scalable, and fully compliant with Canadian and North American standards.
+              </p>
+            </div>
+            <div>
+              <img 
+                src="/Image3.webp" 
+                alt="Fiber optic engineering and deployment" 
+                className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
+              />
+            </div>
           </div>
 
           {/* Engineering & Design */}
@@ -97,16 +70,11 @@ const FiberOptic = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {engineeringDesign.map((item, index) => (
-                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
+                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="space-y-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                        <item.icon className="w-6 h-6 text-primary-800" />
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-foreground">{item.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
-                      </div>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-foreground">{item.title}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -114,51 +82,33 @@ const FiberOptic = () => {
             </div>
           </div>
 
-          {/* Deployment & Testing */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-foreground tracking-tight text-center">
-              Deployment & Testing
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {deploymentTesting.map((item, index) => (
-                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
-                  <CardContent className="p-6">
-                    <div className="space-y-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                        <item.icon className="w-6 h-6 text-primary-800" />
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-foreground">{item.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+          {/* Deployment & Testing + Documentation */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-foreground tracking-tight">
+                Deployment & Testing
+              </h3>
+              <div className="space-y-3">
+                {deploymentTesting.map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary-800 flex-shrink-0 mt-0.5" />
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* Documentation & Compliance */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-foreground tracking-tight text-center">
-              Documentation & Compliance
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {documentationCompliance.map((item, index) => (
-                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <item.icon className="w-6 h-6 text-primary-800" />
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-foreground">{item.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-foreground tracking-tight">
+                Documentation & Compliance
+              </h3>
+              <div className="space-y-3">
+                {documentationCompliance.map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary-800 flex-shrink-0 mt-0.5" />
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

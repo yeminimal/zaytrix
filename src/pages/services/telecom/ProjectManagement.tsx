@@ -1,51 +1,35 @@
-import { 
-  ClipboardList, 
-  FileCheck, 
-  Users, 
-  Search, 
-  DollarSign, 
-  CheckSquare, 
-  MessageSquare,
-  CheckCircle
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ProjectManagement = () => {
   const services = [
     {
       title: "Full Project Lifecycle Planning & Execution",
-      description: "From initial feasibility studies, site surveys, and design, to deployment, commissioning, and operational handover.",
-      icon: ClipboardList
+      description: "From initial feasibility studies, site surveys, and design, to deployment, commissioning, and operational handover."
     },
     {
       title: "Regulatory & Compliance Oversight",
-      description: "Ensuring all projects meet ISED, FCC, SC6, and other Canadian/North American regulatory requirements.",
-      icon: FileCheck
+      description: "Ensuring all projects meet ISED, FCC, SC6, and other Canadian/North American regulatory requirements."
     },
     {
       title: "Vendor & Contractor Management",
-      description: "Coordination, supervision, and performance monitoring of all vendors, contractors, and sub-consultants to guarantee quality and timely delivery.",
-      icon: Users
+      description: "Coordination, supervision, and performance monitoring of all vendors, contractors, and sub-consultants to guarantee quality and timely delivery."
     },
     {
       title: "Technical Due Diligence & Risk Management",
-      description: "Comprehensive technical assessments, risk identification, mitigation strategies, and contingency planning.",
-      icon: Search
+      description: "Comprehensive technical assessments, risk identification, mitigation strategies, and contingency planning."
     },
     {
       title: "Budgeting & Resource Optimization",
-      description: "Financial oversight, resource allocation, and cost control to maximize project efficiency and ROI.",
-      icon: DollarSign
+      description: "Financial oversight, resource allocation, and cost control to maximize project efficiency and ROI."
     },
     {
       title: "Quality Assurance & Reporting",
-      description: "Implementation of robust QA processes, including site audits, progress tracking, and transparent reporting to stakeholders.",
-      icon: CheckSquare
+      description: "Implementation of robust QA processes, including site audits, progress tracking, and transparent reporting to stakeholders."
     },
     {
       title: "Strategic Advisory & Stakeholder Engagement",
-      description: "Expert guidance for decision-making, technology selection, and long-term network planning, including coordination with government agencies, public safety authorities, and enterprise clients.",
-      icon: MessageSquare
+      description: "Expert guidance for decision-making, technology selection, and long-term network planning, including coordination with government agencies, public safety authorities, and enterprise clients."
     }
   ];
 
@@ -58,20 +42,29 @@ const ProjectManagement = () => {
   ];
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-secondary/30">
       <div className="container-custom">
         <div className="space-y-16">
-          {/* Section Header */}
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3">
-              <ClipboardList className="w-10 h-10 text-primary-800" />
+          {/* Section Header with Image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img 
+                src="/Image6.webp" 
+                alt="Telecom project management and advisory" 
+                className="rounded-2xl shadow-xl w-full h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2 space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
                 Telecom Project Management & Technical Advisory
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Zaytrix delivers comprehensive project management and technical advisory services for telecom, fiber, private networks, IoT, and mission-critical communications projects.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our team combines engineering expertise, regulatory knowledge, and operational excellence to ensure that complex projects are delivered on time, on budget, and to specification — every time.
+              </p>
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Zaytrix delivers comprehensive project management and technical advisory services for telecom, fiber, private networks, IoT, and mission-critical communications projects. Our team combines engineering expertise, regulatory knowledge, and operational excellence to ensure that complex projects are delivered on time, on budget, and to specification — every time.
-            </p>
           </div>
 
           {/* Our Services */}
@@ -81,16 +74,11 @@ const ProjectManagement = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300">
+                <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 bg-background">
                   <CardContent className="p-6 h-full">
-                    <div className="space-y-4">
-                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                        <service.icon className="w-6 h-6 text-primary-800" />
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-foreground">{service.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-                      </div>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-foreground">{service.title}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                     </div>
                   </CardContent>
                 </Card>

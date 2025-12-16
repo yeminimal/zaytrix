@@ -1,4 +1,5 @@
 import TelecomHero from "./telecom/TelecomHero";
+import TelecomIntro from "./telecom/TelecomIntro";
 import NetworkEngineering from "./telecom/NetworkEngineering";
 import FiberOptic from "./telecom/FiberOptic";
 import P25Solutions from "./telecom/P25Solutions";
@@ -12,6 +13,7 @@ const Telecom = () => {
   return (
     <div className="min-h-screen">
       <TelecomHero />
+      <TelecomIntro />
       <NetworkEngineering />
       <FiberOptic />
       <P25Solutions />

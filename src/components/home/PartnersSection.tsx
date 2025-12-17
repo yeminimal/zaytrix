@@ -14,6 +14,12 @@ const partners: Partner[] = [
     logoUrl: "/partners/veltris-logo.svg",
     websiteUrl: "https://www.veltris.com",
     description: "AI-Powered Solution Accelerators"
+  },
+  {
+    name: "ATEC Wireless",
+    logoUrl: "/partners/atec-wireless-logo.png",
+    websiteUrl: "https://atecwireless.com",
+    description: "Wireless Solutions Provider"
   }
 ];
 

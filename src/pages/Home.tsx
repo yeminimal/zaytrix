@@ -7,6 +7,7 @@ import HeroSection from "@/components/HeroSection";
 import PageHead from "@/components/PageHead";
 import ServicesSection from "@/components/home/ServicesSection";
 import WhyZaytrixSection from "@/components/home/WhyZaytrixSection";
+import PartnersSection from "@/components/home/PartnersSection";
 import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 import { useImagePreloader } from "@/hooks/useImagePreloader";
 
@@ -63,6 +64,9 @@ const Home = () => {
 
           {/* Why Zaytrix Section */}
           <WhyZaytrixSection />
+
+          {/* Partners Section */}
+          <PartnersSection />
 
           {/* Client Testimonials */}
           <section

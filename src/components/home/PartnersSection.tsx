@@ -11,7 +11,7 @@ interface Partner {
 const partners: Partner[] = [
   {
     name: "Veltris",
-    logoUrl: "https://www.veltris.com/wp-content/uploads/2023/09/Veltris-IAT-Logo.png",
+    logoUrl: "/partners/veltris-logo.svg",
     websiteUrl: "https://www.veltris.com",
     description: "AI-Powered Solution Accelerators"
   }

@@ -22,6 +22,15 @@ const Telecom = lazy(() => import("./pages/services/Telecom"));
 const DigitalTechnology = lazy(() => import("./pages/services/DigitalTechnology"));
 const Accounting = lazy(() => import("./pages/services/Accounting"));
 
+// Telecom sub-pages
+const NetworkEngineeringPage = lazy(() => import("./pages/services/telecom/pages/NetworkEngineeringPage"));
+const FiberOpticPage = lazy(() => import("./pages/services/telecom/pages/FiberOpticPage"));
+const P25SolutionsPage = lazy(() => import("./pages/services/telecom/pages/P25SolutionsPage"));
+const SafetyCode6Page = lazy(() => import("./pages/services/telecom/pages/SafetyCode6Page"));
+const PrivateNetworksPage = lazy(() => import("./pages/services/telecom/pages/PrivateNetworksPage"));
+const SiteMaintenancePage = lazy(() => import("./pages/services/telecom/pages/SiteMaintenancePage"));
+const ProjectManagementPage = lazy(() => import("./pages/services/telecom/pages/ProjectManagementPage"));
+
 const queryClient = new QueryClient();
 
 function App() {
@@ -48,6 +57,13 @@ function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/services" element={<Services />} />
                   <Route path="/services/telecom" element={<Telecom />} />
+                  <Route path="/services/telecom/network-engineering" element={<NetworkEngineeringPage />} />
+                  <Route path="/services/telecom/fiber-optic" element={<FiberOpticPage />} />
+                  <Route path="/services/telecom/p25-solutions" element={<P25SolutionsPage />} />
+                  <Route path="/services/telecom/safety-code-6" element={<SafetyCode6Page />} />
+                  <Route path="/services/telecom/private-networks" element={<PrivateNetworksPage />} />
+                  <Route path="/services/telecom/site-maintenance" element={<SiteMaintenancePage />} />
+                  <Route path="/services/telecom/project-management" element={<ProjectManagementPage />} />
                   <Route path="/services/digital-technology" element={<DigitalTechnology />} />
                   <Route path="/services/accounting" element={<Accounting />} />
                   <Route path="/contact" element={<Contact />} />

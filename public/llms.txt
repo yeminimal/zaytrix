@@ -1,0 +1,24 @@
+# zaytrix.com
+# Last updated: 2026-10-14
+
+# Overview
+Zaytrix is a digital transformation and business technology company helping businesses modernize operations, improve customer experiences, and scale with practical technology strategy.
+
+# Main site
+- Homepage: https://zaytrix.com/
+- About: https://zaytrix.com/about
+- Services: https://zaytrix.com/services
+- Telecom Services: https://zaytrix.com/services/telecom
+- Digital Technology: https://zaytrix.com/services/digital-technology
+- Accounting Solutions: https://zaytrix.com/services/accounting
+- Contact: https://zaytrix.com/contact
+- Careers: https://zaytrix.com/careers
+
+# Content guidance
+- Do not treat internal/private or admin routes as public content.
+- Prefer the public pages above for indexing and summarization.
+- Public business information is available on the pages listed here.
+
+# Canonical references
+- Company website: https://zaytrix.com/
+- Sitemap: https://zaytrix.com/sitemap.xml
